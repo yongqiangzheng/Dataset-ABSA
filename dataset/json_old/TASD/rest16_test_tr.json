@@ -1,0 +1,622 @@
+[
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Serviste cok guzel.",
+        "output": "[{\"target\": \"Serviste\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ortam cok guzel.",
+        "output": "[{\"target\": \"Ortam\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Lezzetliydi.",
+        "output": "[{\"target\": \"\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "En beğendigimiz sushico şubesi.",
+        "output": "[{\"target\": \"sushico şubesi\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bahçesi çok güzel ve ferah.",
+        "output": "[{\"target\": \"Bahçesi\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Sushi ustasi cok becerikli ve şakaci :",
+        "output": "[{\"target\": \"Sushi ustasi\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": ") yogun oldugu saatlerde servis biraz aksak olsa da kabul edilebilir buluyoruz",
+        "output": "[{\"target\": \"servis\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Menü çeşitleri zengin.",
+        "output": "[{\"target\": \"Menü çeşitleri\", \"category\": \"food#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Fiyatları normalin biraz üstünde ama yinede caddedeki yorgunluğu atmanız için ferah ferah oturabileceğiniz mekan.",
+        "output": "[{\"target\": \"mekan\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}, {\"target\": \"Fiyatları\", \"category\": \"restaurant#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Herkesin muhallebisini ya da süt tatlilari yedigi yerin ben künefesini begeniyorum.",
+        "output": "[{\"target\": \"künefesini\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Favorilerim biçak arasi ve saç arasi ama tavuk sis ve diger ekmeklerde (kasarli ve kiymali) çok basarili.",
+        "output": "[{\"target\": \"saç arasi\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"tavuk sis\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"ekmeklerde\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"biçak arasi\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Konyada yemedim ama yiyenlerinde begendigi bir mekan.",
+        "output": "[{\"target\": \"mekan\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Servis iyi olmadigindan michelin yildizli yemek yapsalar gözüme görünmüyor.",
+        "output": "[{\"target\": \"Servis\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "35 derece yaz sicaginda buzdolaplari bozuk diye sicak kola getirdiler bu sefer de.",
+        "output": "[{\"target\": \"kola\", \"category\": \"drinks#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Buradan içeri girersiniz karşılamasından tutunda etten önce gelen kuverdeki turşuya kadar hepsi özenle seçilmiş hazırlanmış mekanın ve tatların içinde gezer durursunuz.",
+        "output": "[{\"target\": \"tatların\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"mekanın\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Et menüsünden istediğinizi seçebilirsiniz hepsi olabileceğinin en iyisidir .",
+        "output": "[{\"target\": \"Et\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tatlılar da bir o kadar harikadır.",
+        "output": "[{\"target\": \"Tatlılar\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Mekanın sahibi Beyti Bey her oraya gidişinizde masanıza uğrayıp selam verir.",
+        "output": "[{\"target\": \"Mekanın sahibi\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Söylenecek daha da birşey yok kesinlikle güzel yemek yemek istiyor ve risk almak istemiyorsanız bana kalırsa Beyti'den iyisi yoktur !",
+        "output": "[{\"target\": \"yemek\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Özellikle yabancı misafirlerinizi ağırlamak için osmanlı tarzı dekorasyonu ve akıl almaz lezzetleri sayesinde türk mutfağını tanıtmak için çok uygun...",
+        "output": "[{\"target\": \"lezzetleri\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"dekorasyonu\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Servis kotu, mekan fazla aydinlik ve gurultulu.",
+        "output": "[{\"target\": \"mekan\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}, {\"target\": \"Servis\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Garsonlarin ilgisizligi cabasi.",
+        "output": "[{\"target\": \"Garsonlarin\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Yemekler soguk ve gec geliyor.",
+        "output": "[{\"target\": \"Yemekler\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}, {\"target\": \"geliyor\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tek guzelligi Marina manzarasi.",
+        "output": "[{\"target\": \"Marina manzarasi\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bide Cikolatali Karayip katlarini met etmeden yapamiycam.",
+        "output": "[{\"target\": \"Cikolatali Karayip katlarini\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "İstikrarli.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Her gittigimde bir öncekinden daha kötü susi yapmayi nasil yapmayi beceriyorlar?",
+        "output": "[{\"target\": \"susi\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Sushiler gene basarili; ama yemekler ciddi anlamda bozuldu.",
+        "output": "[{\"target\": \"Sushiler\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"yemekler\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Cok guzel hepsi birbirinden guzel yemeklerinizz ve lezzetli sonrasinda.",
+        "output": "[{\"target\": \"yemeklerinizz\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Garsonlarin servis sunumunda hersey dört dört lük.",
+        "output": "[{\"target\": \"Garsonlarin\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tesekkur ediyorum.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tavsiye bicak arasi yemeniz .",
+        "output": "[{\"target\": \"bicak arasi\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Masanin bir ucundan diger ucuna kadar uzaniyir konya mutfagindan farkli lezzetler deneyin fiyatlar uygun geldi .",
+        "output": "[{\"target\": \"lezzetler\", \"category\": \"food#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çikolatalı Saray muhallebisi , krem karamel ve ayva tatlısından tabaklarca yiyebilirim.",
+        "output": "[{\"target\": \"Çikolatalı Saray muhallebisi\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"krem karamel\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"ayva tatlısından\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bu konuda onların eline kolay kolay kimse su süremez.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çok açsanız pilav üstü döneri deneminizi tavsiye ederim.",
+        "output": "[{\"target\": \"pilav üstü döneri\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Sadece teras katı oturulabilir olan bi şubesi.",
+        "output": "[{\"target\": \"şubesi\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Diğer katlara pekte gerek yokmuş.",
+        "output": "[{\"target\": \"katlara\", \"category\": \"restaurant#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çalışanlar oldukca ilgili alakalı .",
+        "output": "[{\"target\": \"Çalışanlar\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "fiyatlar aynı yani normal .",
+        "output": "[{\"target\": \"fiyatlar\", \"category\": \"restaurant#prices\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "teras katında tatlınızı yiyip çayınızı yudumlayabilirsiniz.",
+        "output": "[{\"target\": \"teras katında\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Denemek lazim - Ögle arasinda is yerinden arkadaslar ile gittik.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Biçak arasi iyi, saç arasi mükemmel, garsonlar ilgisiz ve fiyatlar uçmus.",
+        "output": "[{\"target\": \"fiyatlar\", \"category\": \"food#prices\", \"sentiment\": \"negative\"}, {\"target\": \"Biçak arasi\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"saç arasi\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"garsonlar\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ama gene de gitmek lazim.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Etli ekmeğinin Konya'daki mekanlardan bile daha lezzetli olduğunu düşündüğüm mekan/dı.",
+        "output": "[{\"target\": \"Etli ekmeğinin\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Başakşehir şubesi açıldığından beri o eski Ovalı değil.",
+        "output": "[{\"target\": \"Başakşehir şubesi\", \"category\": \"restaurant#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "mekanın yeri çok güzel.",
+        "output": "[{\"target\": \"mekanın yeri\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "çalışanları kibar.",
+        "output": "[{\"target\": \"çalışanları\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "lezzetine güvenebileceğiniz bir zincir zaten.",
+        "output": "[{\"target\": \"lezzetine\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "deniz ürünleri salatası çok lezzetli.",
+        "output": "[{\"target\": \"deniz ürünleri salatası\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "ahtapot, karides, kalamar, somon füme ; ne ararsanız var içinde.",
+        "output": "[{\"target\": \"ahtapot, karides, kalamar, somon\", \"category\": \"food#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "sağlıklı ve hafif.",
+        "output": "[{\"target\": \"\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Toplantı için Kalkıp Florya Lara kadar gidip beklentiye bağlı olarak hayal kırıklığı yaratan mekan.",
+        "output": "[{\"target\": \"mekan\", \"category\": \"restaurant#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Dışarıdan lüks gibi görünse de artık tarihi geçmiş mekan görüntüsü vermekte ve içerideki aksesuarlar göz yormakta.",
+        "output": "[{\"target\": \"aksesuarlar\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}, {\"target\": \"mekan\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Yemeklere gelince döner tatsız tuzsuz, et köfte Pınar'ın et köftesinden daha kötü, kırmızı et hafifçe sert ve keyifsizdi.",
+        "output": "[{\"target\": \"döner\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}, {\"target\": \"kırmızı et\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}, {\"target\": \"et köfte\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Belki künefe iyidir diye düşünürken künefenin peynirden yoksun olması hayal kırıklığımızı üst seviyeye çıkardı.",
+        "output": "[{\"target\": \"künefe\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Illa kebap yemek istiyorsanız başka tercihlere yönelin derim...",
+        "output": "[{\"target\": \"kebap\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Uzun zamandir gitmemistim ve iyi ki gitmemisim.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Gercekten lahmacunu tavugu berbatti ve gelen hesap 2 kisi 169tl.",
+        "output": "[{\"target\": \"lahmacunu tavugu\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}, {\"target\": \"hesap\", \"category\": \"food#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Hic tavsiye etmiyorum , design deseniz zaten ic karartici ve demode",
+        "output": "[{\"target\": \"design\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "100 lira fix menuye gittik 8 kisi 1600 tl odedik 1 buyuk raki ictik toplamda.",
+        "output": "[{\"target\": \"1600 tl\", \"category\": \"restaurant#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "kahve ve caylar 200 tl tutmus heryerde cay ikramdir hemde 1600 tl hesap verene uzak durun",
+        "output": "[{\"target\": \"kahve ve caylar\", \"category\": \"drinks#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Eğer deniz kenarında yer bulabilirseniz oturumu çok keyifli.",
+        "output": "[{\"target\": \"oturumu\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Mekan çok büyük olduğu için personel yetişemiyo ve servis sürekli aksıyor.",
+        "output": "[{\"target\": \"servis\", \"category\": \"service#general\", \"sentiment\": \"negative\"}, {\"target\": \"personel\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Yemekleri gayet güzel",
+        "output": "[{\"target\": \"Yemekleri\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "İftar servisini çok zayıf bulduk.",
+        "output": "[{\"target\": \"İftar servisini\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "500 kişiye kaliteli servis verilemiyorsa 300 kişiye daha iyi şartlar sağlanabilir diye düşünüyorum.",
+        "output": "[{\"target\": \"servis\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ramazanda tavsiye etmiyorum.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bana sushiyi sevdiren tek yer diyebilirim çalışanları o kadar güler yüzlü ki.",
+        "output": "[{\"target\": \"çalışanları\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bu fiyata böyle bir memnuniyet çok az rastlanacak şey .",
+        "output": "[{\"target\": \"fiyata\", \"category\": \"restaurant#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Mekan hiç boğucu degil gayet güzel",
+        "output": "[{\"target\": \"Mekan\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tabi ki et yemekler hepsi cok harika.",
+        "output": "[{\"target\": \"et yemekler\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tarihi bina da begendim.",
+        "output": "[{\"target\": \"Tarihi bina\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tereyağlı Mercimek Çorbası ve Bıçak arası muhteşem ikili diyebilirim.",
+        "output": "[{\"target\": \"Bıçak arası\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"Tereyağlı Mercimek Çorbası\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Her Şubesi'nde aynı kaliteyi yakalamışlar.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Sadece döner olayını pek yapamıyorlar.",
+        "output": "[{\"target\": \"döner\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Servis saatlerinde bolca kalabalik olan ilgili bir mekan ambiyans olarak farkli bir lezzet tadacaginizi size bildiriyor.",
+        "output": "[{\"target\": \"ambiyans\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Farkli tatlar icin dusunulebilinir.",
+        "output": "[{\"target\": \"tatlar\", \"category\": \"food#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tavuklarin iri dogranmis olmasi pek hos degil.",
+        "output": "[{\"target\": \"Tavuklarin\", \"category\": \"food#style_options\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pilavda su tadi aliyorsunuz.",
+        "output": "[{\"target\": \"Pilavda\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bir de üstüne 9,5 TL veriyorsunuz.",
+        "output": "[{\"target\": \"9,5 TL\", \"category\": \"restaurant#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tercih etmem - Pazar günü kahvalti için gittim.",
+        "output": "[{\"target\": \"kahvalti\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Daha önce Nisantasi'nda ki subeye gitmistim ve inanilmaz güzel kahvalti etmistim ve memnun kalmistim.",
+        "output": "[{\"target\": \"kahvalti\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ama bu sefer Beyoglu'nda ki subede hiç memnun kalmadim.",
+        "output": "[{\"target\": \"Beyoglu'nda ki subede\", \"category\": \"restaurant#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Manzarasi yat limani Garsonlari ilgi alakali ozellikle Ege bey.",
+        "output": "[{\"target\": \"Garsonlari\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ancak fiyatlar ile yemek karsilastirmasi bence uyumsuz yuksek standartlar icermekte Ayni mekanda daha çok çeşit var İsim satıyor birazz Dikkat !",
+        "output": "[{\"target\": \"fiyatlar\", \"category\": \"food#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Konumu, manzarası, lezzeti şahane...",
+        "output": "[{\"target\": \"lezzeti\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"manzarası\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}, {\"target\": \"Konumu\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bir arkadaşımın ısrarı ile lahmacun yemiştim ki benim yediğim en güzel lahmacundu...",
+        "output": "[{\"target\": \"lahmacun\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Kebapları zaten muazzam :",
+        "output": "[{\"target\": \"Kebapları\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Hepsi harika...",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ayrıca sigara içmeyenlerin dostu olması dolayısıyla bu mekan benim en favorilerimden :",
+        "output": "[{\"target\": \"mekan\", \"category\": \"restaurant#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pırıl pırıl salonlar Güler yüzlü ve temiz garsonlar.",
+        "output": "[{\"target\": \"salonlar\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}, {\"target\": \"garsonlar\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Etler için yoruma gerek yok.",
+        "output": "[{\"target\": \"Etler\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Özellikle favorim bakır kapta gelen kuzu kol , bunu bu şekilde başka yerde yemeniz olanaksız.",
+        "output": "[{\"target\": \"kuzu kol\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "zeytinyağlılar süper özellikle imambayıldı titretiyor insanı,alkol içmeyecekseniz mukakkak koyu ayranı içmenizi tavsiye ederim.",
+        "output": "[{\"target\": \"koyu ayranı\", \"category\": \"drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"imambayıldı\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"zeytinyağlılar\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "İş fiyatlara gelince öyle bir mekan için normal fakat beyti kalitesinde Avrupa veya Amerika'da yer iseniz 3 kat fazlasını ödemek zorundasınız.",
+        "output": "[{\"target\": \"fiyatlara\", \"category\": \"restaurant#prices\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ara sira gidilebilecek bir lokanta.",
+        "output": "[{\"target\": \"lokanta\", \"category\": \"restaurant#general\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Susileri belli bir seviyede her zaman, asagi düsmüyor.",
+        "output": "[{\"target\": \"Susileri\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çin yemekleri de fena degil.",
+        "output": "[{\"target\": \"Çin yemekleri\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "öğle ve akşam yemekleriyle her şubesinde aynı kaliteyi yakalamış mekan.",
+        "output": "[{\"target\": \"öğle ve akşam yemekleriyle\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "tatlılarını övmeye gerek bile görmüyorum.",
+        "output": "[{\"target\": \"tatlılarını\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "yazın dondurması da denenmeli.",
+        "output": "[{\"target\": \"dondurması\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Sütlü tatlilari mükemmel diyebilirim.",
+        "output": "[{\"target\": \"Sütlü tatlilari\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çayi güzel.",
+        "output": "[{\"target\": \"Çayi\", \"category\": \"drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Döneri çogu insan tarafindan sevilmese de ben seviyorum.",
+        "output": "[{\"target\": \"Döneri\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ama iskenderi güzel degil.",
+        "output": "[{\"target\": \"iskenderi\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Sos isini beceremiyorlar.",
+        "output": "[{\"target\": \"Sos\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Yanindaki yogurt güzel ama.",
+        "output": "[{\"target\": \"yogurt\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bazen gereksiz derecede çok kalabalik olabiliyor.",
+        "output": "[{\"target\": \"\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Kebap ve Et restoranları aleminde sıkça karşılaşılan lezzet ve ambiyans paradoksunu çözmüş bir mekan.",
+        "output": "[{\"target\": \"ambiyans\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}, {\"target\": \"lezzet\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Lahmacun ve içliköfte iyi fakat dolmaları Antep usulünde İstanbul'da yediklerim arasında en iyilerdendi.",
+        "output": "[{\"target\": \"Lahmacun ve içliköfte\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"dolmaları\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Etler malzeme, marinasyon, pişirme ve sunum açısından çok başarılı.",
+        "output": "[{\"target\": \"Etler\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}, {\"target\": \"Etler\", \"category\": \"food#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Özellikle fıstıklı kebap favorim.",
+        "output": "[{\"target\": \"fıstıklı kebap\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Katmer de muazzam.",
+        "output": "[{\"target\": \"Katmer\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ambiyans ve dekorasyon titizlikle tasarlanmış olan bu mekanda menüye bağlı kalmayatak tamamen sizin isteklerinize göre sipariş verebiliyorsunuz.",
+        "output": "[{\"target\": \"Ambiyans ve dekorasyon\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}, {\"target\": \"sipariş\", \"category\": \"food#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Manzara süper,yemekler fena değil ama porsiyon miktarı çook çook azz o fiyatı kesinlikle haketmiyor.",
+        "output": "[{\"target\": \"Manzara\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}, {\"target\": \"yemekler\", \"category\": \"food#quality\", \"sentiment\": \"neutral\"}, {\"target\": \"porsiyon miktarı\", \"category\": \"food#style_options\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "çok sıcak çok kalabalık denizden koku geliyor yemekleri orta garsonlar ilgisiz kahvaltısı zayıf üzerine gidip Saray dan suböreği yedik otopark ücretsiz diyip ücret alıyor",
+        "output": "[{\"target\": \"koku\", \"category\": \"ambience#general\", \"sentiment\": \"negative\"}, {\"target\": \"garsonlar\", \"category\": \"service#general\", \"sentiment\": \"negative\"}, {\"target\": \"yemekleri\", \"category\": \"food#quality\", \"sentiment\": \"neutral\"}, {\"target\": \"kahvaltısı\", \"category\": \"food#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çalışanlar kesinlikle çok nezih.",
+        "output": "[{\"target\": \"Çalışanlar\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Çayı da güzel yapıyorlar yanına da su böreği .",
+        "output": "[{\"target\": \"Çayı\", \"category\": \"drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"su böreği\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Tavsiye ederim.",
+        "output": "[{\"target\": \"\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Istiklal Caddesi'ne girdiğinizde solda kalıyor.",
+        "output": "[{\"target\": \"solda\", \"category\": \"location#general\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Deniz kenarında olan bütün mekanların aurası başka tabi adı birde Fenerbahçe olursa...",
+        "output": "[{\"target\": \"mekanların\", \"category\": \"ambience#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Açıldığından bu yana buranın keyfini çıkarmayı çok seviyorum.",
+        "output": "[{\"target\": \"buranın\", \"category\": \"restaurant#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include restaurant, food, drinks, service, ambience, and location. Attributes include general, prices, quality, style_options and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Klasik lezzetler...",
+        "output": "[{\"target\": \"lezzetler\", \"category\": \"food#quality\", \"sentiment\": \"positive\"}]"
+    }
+]

@@ -1,0 +1,2112 @@
+[
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Boot time is super fast, around anywhere from 35 seconds to 1 minute.",
+        "output": "[{\"aspect\": \"Boot time\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "tech support would not fix the problem unless I bought your plan for $150 plus.",
+        "output": "[{\"aspect\": \"tech support\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Set up was easy.",
+        "output": "[{\"aspect\": \"Set up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Did not enjoy the new Windows 8 and touchscreen functions.",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"negative\"}, {\"aspect\": \"touchscreen functions\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Other than not being a fan of click pads (industry standard these days) and the lousy internal speakers, it's hard for me to find things about this notebook I don't like, especially considering the $350 price tag.",
+        "output": "[{\"aspect\": \"internal speakers\", \"sentiment\": \"negative\"}, {\"aspect\": \"price tag\", \"sentiment\": \"positive\"}, {\"aspect\": \"click pads\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "No installation disk (DVD) is included.",
+        "output": "[{\"aspect\": \"installation disk (DVD)\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's fast, light, and simple to use.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Works well, and I am extremely happy to be back to an apple OS.",
+        "output": "[{\"aspect\": \"Works\", \"sentiment\": \"positive\"}, {\"aspect\": \"apple OS\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Sure it's not light and slim but the features make up for it 100%.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I am pleased with the fast log on, speedy WiFi connection and the long battery life (>6 hrs).",
+        "output": "[{\"aspect\": \"log on\", \"sentiment\": \"positive\"}, {\"aspect\": \"WiFi connection\", \"sentiment\": \"positive\"}, {\"aspect\": \"battery life\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Apple engineers have not yet discovered the delete key.",
+        "output": "[{\"aspect\": \"delete key\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Made interneting (part of my business) very difficult to maintain.",
+        "output": "[{\"aspect\": \"interneting\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Luckily, for all of us contemplating the decision, the Mac Mini is priced just right.",
+        "output": "[{\"aspect\": \"priced\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Super light, super sexy and everything just works.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Only problem that I had was that the track pad was not very good for me, I only had a problem once or twice with it, But probably my computer was a bit defective.",
+        "output": "[{\"aspect\": \"track pad\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is super fast and has outstanding graphics.",
+        "output": "[{\"aspect\": \"graphics\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "But the mountain lion is just too slow.",
+        "output": "[{\"aspect\": \"mountain lion\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Strong build though which really adds to its durability.",
+        "output": "[{\"aspect\": \"durability\", \"sentiment\": \"positive\"}, {\"aspect\": \"build\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The battery life is excellent- 6-7 hours without charging.",
+        "output": "[{\"aspect\": \"battery life\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I've had my computer for 2 weeks already and it works perfectly.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "And I may be the only one but I am really liking Windows 8.",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The baterry is very longer.",
+        "output": "[{\"aspect\": \"baterry\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Its size is ideal and the weight is acceptable.",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"positive\"}, {\"aspect\": \"weight\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I can say that I am fully satisfied with the performance that the computer has supplied.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This laptop has only 2 USB ports, and they are both on the same side.",
+        "output": "[{\"aspect\": \"USB ports\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It has so much more speed and the screen is very sharp.",
+        "output": "[{\"aspect\": \"speed\", \"sentiment\": \"positive\"}, {\"aspect\": \"screen\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Everything I wanted and everything I needed and the price was great!",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's not inexpensive but the Hardware performance is impressive for a computer this small.",
+        "output": "[{\"aspect\": \"Hardware performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This thing is awesome, everything always works, everything is always easy to set up, everything is compatible, its literally everything I could ask for.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}, {\"aspect\": \"set up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Keyboard responds well to presses.",
+        "output": "[{\"aspect\": \"Keyboard\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Lastly, Windows 8 is annoying.",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Everything is so easy and intuitive to setup or configure.",
+        "output": "[{\"aspect\": \"setup\", \"sentiment\": \"positive\"}, {\"aspect\": \"configure\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Biggest complaint is Windows 8 .",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Only 2 usb ports...seems kind of...limited.",
+        "output": "[{\"aspect\": \"usb ports\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It has all the expected features and more +plus a wide screen and more than roomy keyboard.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"positive\"}, {\"aspect\": \"screen\", \"sentiment\": \"positive\"}, {\"aspect\": \"keyboard\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Amazing Performance for anything I throw at it.",
+        "output": "[{\"aspect\": \"Performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The receiver was full of superlatives for the quality and performance.",
+        "output": "[{\"aspect\": \"quality\", \"sentiment\": \"positive\"}, {\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was extremely happy with the OS itself.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The new MBP offers great portability and gives us confidence that we are not going to need to purchase a new laptop in 18 months.",
+        "output": "[{\"aspect\": \"portability\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The criticism has waned, and now I'd be the first to recommend an Air for truly portable computing.",
+        "output": "[{\"aspect\": \"portable computing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I would have given it 5 starts was it not for the fact that it had Windows 8",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "MS Office 2011 for Mac is wonderful, well worth it.",
+        "output": "[{\"aspect\": \"MS Office 2011 for Mac\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "But the performance of Mac Mini is a huge disappointment.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "They don't just look good; they deliver excellent performance.",
+        "output": "[{\"aspect\": \"look\", \"sentiment\": \"positive\"}, {\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I have had it over a year now with out a Glitch of any kind..I love the lit up keys and screen display...this thing is Fast and clear as can be.",
+        "output": "[{\"aspect\": \"lit up keys\", \"sentiment\": \"positive\"}, {\"aspect\": \"screen display\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Mountain Lion OS is not hard to figure out if you are familiar with Microsoft Windows.",
+        "output": "[{\"aspect\": \"Mountain Lion OS\", \"sentiment\": \"positive\"}, {\"aspect\": \"Microsoft Windows\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "However, I can refute that OSX is \"FAST\".",
+        "output": "[{\"aspect\": \"OSX\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Enjoy using Microsoft Office!",
+        "output": "[{\"aspect\": \"Microsoft Office\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Incredible graphics and brilliant colors.",
+        "output": "[{\"aspect\": \"graphics\", \"sentiment\": \"positive\"}, {\"aspect\": \"colors\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Built-in apps are purely amazing.",
+        "output": "[{\"aspect\": \"Built-in apps\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Cons: Screen resolution.",
+        "output": "[{\"aspect\": \"Screen resolution\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "From the speed to the multi touch gestures this operating system beats Windows easily.",
+        "output": "[{\"aspect\": \"operating system\", \"sentiment\": \"positive\"}, {\"aspect\": \"Windows\", \"sentiment\": \"negative\"}, {\"aspect\": \"speed\", \"sentiment\": \"positive\"}, {\"aspect\": \"multi touch gestures\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I really like the size and I'm a fan of the ACERS.",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I opted for the SquareTrade 3-Year Computer Accidental Protection Warranty ($1500-2000) which also support \"accidents\" like drops and spills that are NOT covered by AppleCare.",
+        "output": "[{\"aspect\": \"SquareTrade 3-Year Computer Accidental Protection Warranty\", \"sentiment\": \"positive\"}, {\"aspect\": \"AppleCare\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's light and easy to transport.",
+        "output": "[{\"aspect\": \"transport\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Once you get past learning how to use the poorly designed Windows 8 Set-Up you may feel frustrated.",
+        "output": "[{\"aspect\": \"Windows 8 Set-Up\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's been time for a new laptop, and the only debate was which size of the Mac laptops, and whether to spring for the retina display.",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"neutral\"}, {\"aspect\": \"retina display\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The reason why I choose apple MacBook because of their design and the aluminum casing.",
+        "output": "[{\"aspect\": \"design\", \"sentiment\": \"positive\"}, {\"aspect\": \"aluminum casing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The aluminum body sure makes it stand out.",
+        "output": "[{\"aspect\": \"aluminum body\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is very easy to integrate bluetooth devices, and USB devices are recognized almost instantly.",
+        "output": "[{\"aspect\": \"integrate bluetooth devices\", \"sentiment\": \"positive\"}, {\"aspect\": \"USB devices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "And the fact that Apple is driving the 13\" RMBP with the Intel4000 graphic chip seems underpowered (to me.",
+        "output": "[{\"aspect\": \"Intel4000 graphic chip\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Apple removed the DVD drive Firewire port (will work with adapter) and put the SDXC slot in a silly position on the back.",
+        "output": "[{\"aspect\": \"DVD drive Firewire port\", \"sentiment\": \"neutral\"}, {\"aspect\": \"adapter\", \"sentiment\": \"neutral\"}, {\"aspect\": \"SDXC slot\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The durability of the laptop will make it worth the money.",
+        "output": "[{\"aspect\": \"durability\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Well designed and fast.",
+        "output": "[{\"aspect\": \"designed\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "But I was completely wrong, this computer is UNBELIEVABLE amazing and easy to use.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Exactly as posted plus a great value.",
+        "output": "[{\"aspect\": \"value\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The specs are pretty good too.",
+        "output": "[{\"aspect\": \"specs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Apple is unmatched in product quality,aesthetics,craftmanship, and customer service.",
+        "output": "[{\"aspect\": \"product quality\", \"sentiment\": \"positive\"}, {\"aspect\": \"aesthetics\", \"sentiment\": \"positive\"}, {\"aspect\": \"craftmanship\", \"sentiment\": \"positive\"}, {\"aspect\": \"customer service\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is a great size and amazing windows 8 included!",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"positive\"}, {\"aspect\": \"windows 8\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I do not like too much Windows 8.",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Startup times are incredibly long: over two minutes.",
+        "output": "[{\"aspect\": \"Startup times\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Also stunning colors and speedy",
+        "output": "[{\"aspect\": \"colors\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "great price free shipping what else can i ask for!!",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}, {\"aspect\": \"shipping\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This mouse is terrific.",
+        "output": "[{\"aspect\": \"mouse\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is really thick around the battery.",
+        "output": "[{\"aspect\": \"battery\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "And windows 7 works like a charm.",
+        "output": "[{\"aspect\": \"windows 7\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": ":) Great product, great price, great delivery, and great service.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}, {\"aspect\": \"delivery\", \"sentiment\": \"positive\"}, {\"aspect\": \"service\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": ":] It arrived so fast and customer service was great.",
+        "output": "[{\"aspect\": \"customer service\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "tried windows 8 and hated it !!!",
+        "output": "[{\"aspect\": \"windows 8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The price is higher than most lab top out there; however, he/she will get what they paid for, which is a great computer.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Set up was a breeze.",
+        "output": "[{\"aspect\": \"Set up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "But I do NOT like Win8.",
+        "output": "[{\"aspect\": \"Win8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I am still in the process of learning about its features.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I had the same reasons as most PC users: the price, the overbearing restrictions of OSX and lack of support for games.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"negative\"}, {\"aspect\": \"OSX\", \"sentiment\": \"negative\"}, {\"aspect\": \"support for games\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I wanted it for it's mobility and man, this little bad boy is very nice.",
+        "output": "[{\"aspect\": \"mobility\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The investment of a new MacBook Pro came at a price, but totally worth it for a good piece of mind.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I found the mini to be:Exceptionally easy to set up",
+        "output": "[{\"aspect\": \"set up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Having USB3 is why I bought this Mini.",
+        "output": "[{\"aspect\": \"USB3\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The sound is nice and loud; I don't have any problems with hearing anything.",
+        "output": "[{\"aspect\": \"sound\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is very slim, the track pad is very much impressed with me.",
+        "output": "[{\"aspect\": \"track pad\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The settings are not user-friendly either.",
+        "output": "[{\"aspect\": \"settings\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Thank goodness for OpenOffice!",
+        "output": "[{\"aspect\": \"OpenOffice\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Awesome form factor, great battery life, wonderful UX.",
+        "output": "[{\"aspect\": \"form factor\", \"sentiment\": \"positive\"}, {\"aspect\": \"battery life\", \"sentiment\": \"positive\"}, {\"aspect\": \"UX\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "i love the keyboard and the screen.",
+        "output": "[{\"aspect\": \"keyboard\", \"sentiment\": \"positive\"}, {\"aspect\": \"screen\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "However, there are MAJOR issues with the touchpad which render the device nearly useless.",
+        "output": "[{\"aspect\": \"touchpad\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I've already upgraded o Mavericks and I am impressed with everything about this computer.",
+        "output": "[{\"aspect\": \"Mavericks\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Not as fast as I would have expect for an i5.",
+        "output": "[{\"aspect\": \"i5\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "thanks for great service and shipping!",
+        "output": "[{\"aspect\": \"service\", \"sentiment\": \"positive\"}, {\"aspect\": \"shipping\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The performance seems quite good, and built-in applications like iPhoto work great with my phone and camera.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}, {\"aspect\": \"built-in applications\", \"sentiment\": \"positive\"}, {\"aspect\": \"iPhoto\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I did swap out the hard drive for a Samsung 830 SSD which I highly recommend.",
+        "output": "[{\"aspect\": \"hard drive\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Samsung 830 SSD\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Starts up in a hurry and everything is ready to go.",
+        "output": "[{\"aspect\": \"Starts up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Yes, that's a good thing, but it's made from aluminum that scratches easily.",
+        "output": "[{\"aspect\": \"aluminum\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Quick and has built in virus control.",
+        "output": "[{\"aspect\": \"built in virus control\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Took a long time trying to decide between one with retina display and one without.",
+        "output": "[{\"aspect\": \"retina display\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was also informed that the components of the Mac Book were dirty.",
+        "output": "[{\"aspect\": \"components\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "the hardware problems have been so bad, i can't wait till it completely dies in 3 years, TOPS!",
+        "output": "[{\"aspect\": \"hardware\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's so nice that the battery last so long and that this machine has the snow lion!",
+        "output": "[{\"aspect\": \"battery\", \"sentiment\": \"positive\"}, {\"aspect\": \"snow lion\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "HOWEVER I chose two day shipping and it took over a week to arrive.",
+        "output": "[{\"aspect\": \"shipping\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "it's exactly what i wanted, and it has all the new features and whatnot.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Can you buy any laptop that matches the quality of a MacBook?",
+        "output": "[{\"aspect\": \"quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It feels cheap, the keyboard is not very sensitive.",
+        "output": "[{\"aspect\": \"keyboard\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Though please note that sometimes it crashes, and the sound quality isnt superb.",
+        "output": "[{\"aspect\": \"sound quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is very easy to navigate even for a novice.",
+        "output": "[{\"aspect\": \"navigate\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Does everything I need it to, has a wonderful battery life and I couldn't be happier.",
+        "output": "[{\"aspect\": \"battery life\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Great Performance and Quality.",
+        "output": "[{\"aspect\": \"Performance\", \"sentiment\": \"positive\"}, {\"aspect\": \"Quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I used windows XP, windows Vista, and Windows 7 extensively.",
+        "output": "[{\"aspect\": \"windows XP\", \"sentiment\": \"neutral\"}, {\"aspect\": \"windows Vista\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Windows 7\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I did add a SSD drive and memory",
+        "output": "[{\"aspect\": \"SSD drive\", \"sentiment\": \"neutral\"}, {\"aspect\": \"memory\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "On start up it asks endless questions just so itune can sell you more of their products.",
+        "output": "[{\"aspect\": \"start up\", \"sentiment\": \"negative\"}, {\"aspect\": \"itune\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I Have been a Pc user for a very long time now but I will get used to this new OS.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "One more thing, this mac does NOT come with restore disks and I am not sure if you can make them direct from the mac like you can with newer PC's, also the charging cables are made of the same cheap material as the iPhone/iPod touch cables.",
+        "output": "[{\"aspect\": \"restore disks\", \"sentiment\": \"negative\"}, {\"aspect\": \"charging cables\", \"sentiment\": \"negative\"}, {\"aspect\": \"material\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I bought it to my son who uses it for graphic design.",
+        "output": "[{\"aspect\": \"graphic design\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I never tried any external mics with that iMac.",
+        "output": "[{\"aspect\": \"external mics\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The new os is great on my macbook pro!",
+        "output": "[{\"aspect\": \"os\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I had a little problem adjusting to the small screen but works fine as long as I remember to carry my glasses.",
+        "output": "[{\"aspect\": \"screen\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I have experienced no problems, works as anticipated.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "System is running great.",
+        "output": "[{\"aspect\": \"System\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Easy to customize setting and even create your own bookmarks.",
+        "output": "[{\"aspect\": \"customize setting\", \"sentiment\": \"positive\"}, {\"aspect\": \"create your own bookmarks\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The MAC Mini, wireless keyboard / mouse and a HDMI cable is all I need to get some real work done.",
+        "output": "[{\"aspect\": \"wireless keyboard / mouse\", \"sentiment\": \"neutral\"}, {\"aspect\": \"HDMI cable\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "it has all the features that we expected and the price was good, working well so far.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"positive\"}, {\"aspect\": \"price\", \"sentiment\": \"positive\"}, {\"aspect\": \"working\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I work as a designer and coder and I needed a new buddy to work with, not gaming.",
+        "output": "[{\"aspect\": \"gaming\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The new operating system makes this computer into a super iPad.",
+        "output": "[{\"aspect\": \"operating system\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Easy to set up and go!",
+        "output": "[{\"aspect\": \"set up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I can't believe how quiet the hard drive is and how quick this thing boots up.",
+        "output": "[{\"aspect\": \"hard drive\", \"sentiment\": \"positive\"}, {\"aspect\": \"boots up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only issue came when I tried scanning to the mac.",
+        "output": "[{\"aspect\": \"scanning\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I think this is about as good as it gets at anything close to this price point.",
+        "output": "[{\"aspect\": \"price point\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's just what we were looking for and it works great.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's so quick and responsive that it makes working/surfing on a computer so much more pleasurable!",
+        "output": "[{\"aspect\": \"working\", \"sentiment\": \"positive\"}, {\"aspect\": \"surfing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It works fine, and all the software seems to run pretty well.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}, {\"aspect\": \"software\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I'm using this computer for word processing, web browsing, some gaming, and I'm learning programming.",
+        "output": "[{\"aspect\": \"word processing\", \"sentiment\": \"neutral\"}, {\"aspect\": \"web browsing\", \"sentiment\": \"neutral\"}, {\"aspect\": \"gaming\", \"sentiment\": \"neutral\"}, {\"aspect\": \"programming\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "My wife was so excited to open the box, but quickly came to see that it did not function as it should.",
+        "output": "[{\"aspect\": \"function\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I wanted a computer that was quite, fast, and that had overall great performance.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Apple \"Help\" is a mixed bag.",
+        "output": "[{\"aspect\": \"Apple \\\"Help\\\"\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It suddenly can not work.",
+        "output": "[{\"aspect\": \"work\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Harddrive was in poor condition, had to replace it.",
+        "output": "[{\"aspect\": \"Harddrive\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The on/off switch is a bit obscure in the rear corner.",
+        "output": "[{\"aspect\": \"on/off switch\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "My only complaint is the total lack of instructions that come with the mac mini.",
+        "output": "[{\"aspect\": \"instructions\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only task that this computer would not be good enough for would be gaming, otherwise the integrated Intel 4000 graphics work well for other tasks.",
+        "output": "[{\"aspect\": \"gaming\", \"sentiment\": \"negative\"}, {\"aspect\": \"integrated Intel 4000 graphics\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I'm hoping the rest of the features will be the signature quality of apple.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I use it mostly for content creation (Audio, video, photo editing) and its reliable.",
+        "output": "[{\"aspect\": \"content creation\", \"sentiment\": \"positive\"}, {\"aspect\": \"Audio\", \"sentiment\": \"positive\"}, {\"aspect\": \"video\", \"sentiment\": \"positive\"}, {\"aspect\": \"photo editing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Screen is bright and gorgeous.",
+        "output": "[{\"aspect\": \"Screen\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only solution is to turn the brightness down, etc.",
+        "output": "[{\"aspect\": \"brightness\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "If you want more information on macs I suggest going to apple.com and heading towards the macbook page for more information on the applications.",
+        "output": "[{\"aspect\": \"applications\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is robust, with a friendly use as all Apple products.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is fast and easy to use.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "And the fact that it comes with an i5 processor definitely speeds things up",
+        "output": "[{\"aspect\": \"i5 processor\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I have been PC for years but this computer is intuitive and its built in features are a great help",
+        "output": "[{\"aspect\": \"built in features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Nice screen, keyboard works great!",
+        "output": "[{\"aspect\": \"screen\", \"sentiment\": \"positive\"}, {\"aspect\": \"keyboard\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was amazed at how fast the delivery was.",
+        "output": "[{\"aspect\": \"delivery\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I've installed to it additional SSD and 16Gb RAM.",
+        "output": "[{\"aspect\": \"SSD\", \"sentiment\": \"neutral\"}, {\"aspect\": \"16Gb RAM\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The memory was gone and it was not able to be used.",
+        "output": "[{\"aspect\": \"memory\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It works great and I am so happy I bought it.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like the design and ease of use with the keyboard, plenty of ports.",
+        "output": "[{\"aspect\": \"design\", \"sentiment\": \"positive\"}, {\"aspect\": \"keyboard\", \"sentiment\": \"positive\"}, {\"aspect\": \"ports\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "it definitely beats my old mac and the service was great.",
+        "output": "[{\"aspect\": \"service\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Web browsing is very quick with Safari browser.",
+        "output": "[{\"aspect\": \"Web browsing\", \"sentiment\": \"positive\"}, {\"aspect\": \"Safari browser\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like the lighted screen at night.",
+        "output": "[{\"aspect\": \"lighted screen\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is really easy to use and it is quick to start up.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}, {\"aspect\": \"start up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I've lived with the crashes and slow operation and restarts.",
+        "output": "[{\"aspect\": \"operation\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "USB3 Peripherals are noticably less expensive than the ThunderBolt ones.",
+        "output": "[{\"aspect\": \"USB3 Peripherals\", \"sentiment\": \"positive\"}, {\"aspect\": \"ThunderBolt\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "And mine had broke but I sent it in under warranty-no problems.",
+        "output": "[{\"aspect\": \"warranty\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's fast, light, and is perfect for media editing, which is mostly why I bought it in the first place.",
+        "output": "[{\"aspect\": \"media editing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The battery lasts as advertised (give or take 15-20 minutes), and the entire user experience is very elegant.",
+        "output": "[{\"aspect\": \"battery\", \"sentiment\": \"positive\"}, {\"aspect\": \"user experience\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Thanks for the fast shipment and great price.",
+        "output": "[{\"aspect\": \"shipment\", \"sentiment\": \"positive\"}, {\"aspect\": \"price\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "!Excelent performance, usability, presentation and time response.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}, {\"aspect\": \"usability\", \"sentiment\": \"positive\"}, {\"aspect\": \"presentation\", \"sentiment\": \"positive\"}, {\"aspect\": \"time response\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The smaller size was a bonus because of space restrictions.",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I blame the Mac OS.",
+        "output": "[{\"aspect\": \"Mac OS\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "In fact I still use manyLegacy programs (Appleworks, FileMaker Pro, Quicken, Photoshop etc)!",
+        "output": "[{\"aspect\": \"Legacy programs\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Appleworks\", \"sentiment\": \"neutral\"}, {\"aspect\": \"FileMaker Pro\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Quicken\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Photoshop\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like the operating system.",
+        "output": "[{\"aspect\": \"operating system\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I love the form factor.",
+        "output": "[{\"aspect\": \"form factor\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's fast at loading the internet.",
+        "output": "[{\"aspect\": \"loading the internet\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "So much faster and sleeker looking.",
+        "output": "[{\"aspect\": \"looking\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Unfortunately, it runs XP and Microsoft is dropping support next April.",
+        "output": "[{\"aspect\": \"XP\", \"sentiment\": \"neutral\"}, {\"aspect\": \"support\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "First off, I really do like my MBP... once used to the OS it is pretty easy to get around, and the overall build is great... eg the keyboard is one of the best to type on.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"positive\"}, {\"aspect\": \"overall build\", \"sentiment\": \"positive\"}, {\"aspect\": \"keyboard\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is made of such solid construction and since I have never had a Mac using my iPhone helped me get used to the system a bit.",
+        "output": "[{\"aspect\": \"construction\", \"sentiment\": \"positive\"}, {\"aspect\": \"system\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Very nice unibody construction.",
+        "output": "[{\"aspect\": \"unibody construction\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This Macbook Pro is fast, powerful, and runs super quiet and cool.",
+        "output": "[{\"aspect\": \"runs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's ok but doesn't have a disk drive which I didn't know until after I bought it.",
+        "output": "[{\"aspect\": \"disk drive\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "There is no HDMI receptacle, nor is there an SD card slot located anywhere on the device.",
+        "output": "[{\"aspect\": \"HDMI receptacle\", \"sentiment\": \"neutral\"}, {\"aspect\": \"SD card slot\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It came in brand new and works perfectly.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It shouldn't happen like that, I don't have any design app open or anything.",
+        "output": "[{\"aspect\": \"design app\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "MY TRACKPAD IS NOT WORKING.",
+        "output": "[{\"aspect\": \"TRACKPAD\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It looks and feels solid, with a flawless finish.",
+        "output": "[{\"aspect\": \"finish\", \"sentiment\": \"positive\"}, {\"aspect\": \"looks\", \"sentiment\": \"positive\"}, {\"aspect\": \"feels\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Price was higher when purchased on MAC when compared to price showing on PC when I bought this product.",
+        "output": "[{\"aspect\": \"Price\", \"sentiment\": \"negative\"}, {\"aspect\": \"price\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Then the system would many times not power down without a forced power-off.",
+        "output": "[{\"aspect\": \"system\", \"sentiment\": \"negative\"}, {\"aspect\": \"power down\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The configuration is perfect for my needs.",
+        "output": "[{\"aspect\": \"configuration\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "and the speakers is the worst ever.",
+        "output": "[{\"aspect\": \"speakers\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Its the best, its got the looks, super easy to use and love all you can do with the trackpad!..",
+        "output": "[{\"aspect\": \"looks\", \"sentiment\": \"positive\"}, {\"aspect\": \"use\", \"sentiment\": \"positive\"}, {\"aspect\": \"trackpad\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Web surfuring is smooth and seamless.",
+        "output": "[{\"aspect\": \"Web surfuring\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I'm overall pleased with the interface and the portability of this product.",
+        "output": "[{\"aspect\": \"interface\", \"sentiment\": \"positive\"}, {\"aspect\": \"portability\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This item is a beautiful piece, it works well, it is easy to carry and handle.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}, {\"aspect\": \"carry\", \"sentiment\": \"positive\"}, {\"aspect\": \"handle\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It was also suffering from hardware (keyboard) issues, relatively slow performance and shortening battery lifetime.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"negative\"}, {\"aspect\": \"battery lifetime\", \"sentiment\": \"negative\"}, {\"aspect\": \"hardware (keyboard)\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Runs good and does the job, can't complain about that!",
+        "output": "[{\"aspect\": \"Runs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's silent and has a very small footprint on my desk.",
+        "output": "[{\"aspect\": \"footprint\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The exterior is absolutely gorgeous.",
+        "output": "[{\"aspect\": \"exterior\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It has a very high performance, just for what I needed for.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Apple is aware of this issue and this is either old stock or a defective design involving the intel 4000 graphics chipset.",
+        "output": "[{\"aspect\": \"intel 4000 graphics chipset\", \"sentiment\": \"neutral\"}, {\"aspect\": \"design\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "OSX Mountain Lion  soon to upgrade to Mavericks.",
+        "output": "[{\"aspect\": \"OSX Mountain Lion\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Mavericks\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I just bought the new MacBook Pro, the 13\" model, and I can't believe Apple keeps making the same mistake with regard to USB ports.",
+        "output": "[{\"aspect\": \"USB ports\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It wakes in less than a second when I open the lid.",
+        "output": "[{\"aspect\": \"lid\", \"sentiment\": \"neutral\"}, {\"aspect\": \"wakes\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is the perfect size and speed for me.",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"positive\"}, {\"aspect\": \"speed\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "THE CUSTOMER SERVICE IS TERRIFIC!!",
+        "output": "[{\"aspect\": \"CUSTOMER SERVICE\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "My last laptop was a 17\" ASUS gaming machine, which performed admirably, but having since built my own desktop and really settling into the college life, I found myself wanting something smaller and less cumbersome, not to mention that the ASUS had been slowly developing problems ever since I bought it about 4 years ago.",
+        "output": "[{\"aspect\": \"performed\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "However, it did not have any scratches, ZERO battery cycle count (pretty surprised), and all the hardware seemed to be working perfectly.",
+        "output": "[{\"aspect\": \"battery cycle count\", \"sentiment\": \"positive\"}, {\"aspect\": \"hardware\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "After fumbling around with the OS I started searching the internet for a fix and found a number of forums on fixing the issue.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "And as for all the fancy finger swipes -- I just gave up and attached a mouse.",
+        "output": "[{\"aspect\": \"finger swipes\", \"sentiment\": \"negative\"}, {\"aspect\": \"mouse\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",
+        "output": "[{\"aspect\": \"storage\", \"sentiment\": \"neutral\"}, {\"aspect\": \"screen\", \"sentiment\": \"neutral\"}, {\"aspect\": \"photoshop\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like coming back to Mac OS but this laptop is lacking in speaker quality compared to my $400  old HP laptop.",
+        "output": "[{\"aspect\": \"Mac OS\", \"sentiment\": \"positive\"}, {\"aspect\": \"speaker quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Shipped very quickly and safely.",
+        "output": "[{\"aspect\": \"Shipped\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The thunderbolt port is awesome!",
+        "output": "[{\"aspect\": \"thunderbolt port\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The performance is definitely superior to any computer I've ever put my hands on.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's great for streaming video and other entertainment uses.",
+        "output": "[{\"aspect\": \"streaming video\", \"sentiment\": \"positive\"}, {\"aspect\": \"entertainment uses\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like the design and its features but there are somethings I think needs to be improved.",
+        "output": "[{\"aspect\": \"design\", \"sentiment\": \"positive\"}, {\"aspect\": \"features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "There were small problems with Mac office.",
+        "output": "[{\"aspect\": \"Mac office\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I understand I should call Apple Tech Support about any variables(which is my purpose of writing this con) as variables could be a bigger future problem.",
+        "output": "[{\"aspect\": \"Apple Tech Support\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I ordered my 2012 mac mini after being disappointed with spec of the new 27\" Imacs.",
+        "output": "[{\"aspect\": \"spec\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It still works and it's extremely user friendly, so I would recommend it for new computer user and also for those who are just looking for a more efficient way to do things",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Its fast, easy to use and it looks great.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}, {\"aspect\": \"looks\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "(but Office can be purchased) IF I ever need a laptop again I am for sure purchasing another Toshiba!!",
+        "output": "[{\"aspect\": \"Office\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I haven't tried the one with retina display... Maybe in the future.",
+        "output": "[{\"aspect\": \"retina display\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Performance is much much better on the Pro, especially if you install an SSD on it.",
+        "output": "[{\"aspect\": \"Performance\", \"sentiment\": \"positive\"}, {\"aspect\": \"SSD\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Note, however, that any existing MagSafe accessories you have will not work with the MagSafe 2 connection.",
+        "output": "[{\"aspect\": \"MagSafe accessories\", \"sentiment\": \"neutral\"}, {\"aspect\": \"MagSafe 2 connection\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only thing I dislike is the touchpad, alot of the times its unresponsive and does things I dont want it too, I would recommend using a mouse with it.",
+        "output": "[{\"aspect\": \"touchpad\", \"sentiment\": \"negative\"}, {\"aspect\": \"mouse\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Mac mini is about 8x smaller than my old computer which is a huge bonus and runs very quiet, actually the fans aren't audible unlike my old pc",
+        "output": "[{\"aspect\": \"runs\", \"sentiment\": \"positive\"}, {\"aspect\": \"fans\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "MAYBE The Mac OS improvement were not The product they Want to offer.",
+        "output": "[{\"aspect\": \"Mac OS\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I thought the transition would be difficult at best and would take some time to fully familiarize myself with the new Mac ecosystem.",
+        "output": "[{\"aspect\": \"Mac ecosystem\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's absolutely wonderful and worth the price!",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I am please with the products ease of use; out of the box ready; appearance and functionality.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}, {\"aspect\": \"appearance\", \"sentiment\": \"positive\"}, {\"aspect\": \"functionality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Perfect for all my graphic design classes I'm taking this year in college :-)",
+        "output": "[{\"aspect\": \"graphic design\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I will not be using that slot again.",
+        "output": "[{\"aspect\": \"slot\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The OS is fast and fluid, everything is organized and it's just beautiful.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "They are simpler to use.",
+        "output": "[{\"aspect\": \"use\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "!so nice .. stable .. fast .. now i got my SSD !",
+        "output": "[{\"aspect\": \"SSD\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Also, in using the built-in camera, my voice recording for my vlog sounds like the interplanetary transmissions in the \"Star Wars\" saga.",
+        "output": "[{\"aspect\": \"built-in camera\", \"sentiment\": \"neutral\"}, {\"aspect\": \"voice recording\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I love the quick start up.",
+        "output": "[{\"aspect\": \"start up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "You just cannot beat the functionality of an Apple device.",
+        "output": "[{\"aspect\": \"functionality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Yet my mac continues to function properly.",
+        "output": "[{\"aspect\": \"function\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Graphics are much improved.",
+        "output": "[{\"aspect\": \"Graphics\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Here are the things that made me confident with my purchase:Build Quality - Seriously, you can't beat a unibody construction.",
+        "output": "[{\"aspect\": \"Build Quality\", \"sentiment\": \"positive\"}, {\"aspect\": \"unibody construction\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It provides much more flexibility for connectivity.",
+        "output": "[{\"aspect\": \"flexibility for connectivity\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I want the portability of a tablet, without the limitations of a tablet and that's where this laptop comes into play.",
+        "output": "[{\"aspect\": \"portability\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Mac tutorials do help.",
+        "output": "[{\"aspect\": \"Mac tutorials\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The technical support was not helpful as well.",
+        "output": "[{\"aspect\": \"technical support\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I got the new adapter and there was no change.",
+        "output": "[{\"aspect\": \"adapter\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "so i called technical support.",
+        "output": "[{\"aspect\": \"technical support\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Came with iPhoto and garage band already loaded.",
+        "output": "[{\"aspect\": \"iPhoto\", \"sentiment\": \"neutral\"}, {\"aspect\": \"garage band\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Logic board utterly fried, cried, and laid down and died.",
+        "output": "[{\"aspect\": \"Logic board\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The sound was crappy even when you turn up the volume still the same results.",
+        "output": "[{\"aspect\": \"sound\", \"sentiment\": \"negative\"}, {\"aspect\": \"volume\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "OSX Lion is a great performer..extremely fast and reliable.",
+        "output": "[{\"aspect\": \"OSX Lion\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Having heard from friends and family about how reliable a Mac product is, I never expected to have an application crash within the first month, but I did.",
+        "output": "[{\"aspect\": \"application\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Macbook pro's physical form is wonderful.",
+        "output": "[{\"aspect\": \"physical form\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Mini's body hasn't changed since late 2010- and for a good reason.",
+        "output": "[{\"aspect\": \"body\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The unibody construction really does feel lot more solid than Apple's previous laptops.",
+        "output": "[{\"aspect\": \"unibody construction\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "3D rendering slows it down considerably.",
+        "output": "[{\"aspect\": \"3D rendering\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Got this Mac Mini with OS X Mountain Lion for my wife.",
+        "output": "[{\"aspect\": \"OS X Mountain Lion\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "fast, great screen, beautiful apps for a laptop;priced at 1100 on the apple website;amazon had it for 1098+ tax -  plus i had a 10% off coupon from amazon-cost me 998 plus tax- 1070- OTD!",
+        "output": "[{\"aspect\": \"screen\", \"sentiment\": \"positive\"}, {\"aspect\": \"apps\", \"sentiment\": \"positive\"}, {\"aspect\": \"priced\", \"sentiment\": \"neutral\"}, {\"aspect\": \"cost\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "12.44 seconds to boot.",
+        "output": "[{\"aspect\": \"boot\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "All the ports are much needed since this is my main computer.",
+        "output": "[{\"aspect\": \"ports\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Like New condition of the iMac MC309LL/A on Amazon is at $900+ level only, and it is a Quad-Core 2.5 GHz CPU (similar to the $799 Mini), with Radeon HD 6750M 512MB graphic card (this mini is integrated Intel 4000 card), and it even comes with wireless Apple Keyboard and Mouse, all put together in neat and nice package.",
+        "output": "[{\"aspect\": \"Quad-Core 2.5 GHz CPU\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Radeon HD 6750M 512MB graphic card\", \"sentiment\": \"neutral\"}, {\"aspect\": \"integrated Intel 4000 card\", \"sentiment\": \"neutral\"}, {\"aspect\": \"wireless Apple Keyboard and Mouse\", \"sentiment\": \"neutral\"}, {\"aspect\": \"package\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Put a cover on it and is a little better but that is my only complaint.",
+        "output": "[{\"aspect\": \"cover\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Within a few hours I was using the gestures unconsciously.",
+        "output": "[{\"aspect\": \"gestures\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This mac does come with an extender cable and I'm using mine right now hoping the cable will stay nice for the many years I plan on using this mac.",
+        "output": "[{\"aspect\": \"extender cable\", \"sentiment\": \"neutral\"}, {\"aspect\": \"cable\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The 2.9ghz dual-core i7 chip really out does itself.",
+        "output": "[{\"aspect\": \"2.9ghz dual-core i7 chip\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is pretty snappy and starts up in about 30 seconds which is good enough for me.",
+        "output": "[{\"aspect\": \"starts up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "So noise is reduced at least 50% and the heat is much better, now it doesn't feel hot but warm.",
+        "output": "[{\"aspect\": \"heat\", \"sentiment\": \"conflict\"}, {\"aspect\": \"noise\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Not sure on Windows 8.",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "My one complaint is that there was no internal CD drive.",
+        "output": "[{\"aspect\": \"internal CD drive\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This newer netbook has no hard drive or network lights.",
+        "output": "[{\"aspect\": \"hard drive\", \"sentiment\": \"neutral\"}, {\"aspect\": \"network lights\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was having a though time deciding between the 13\" MacBook Air or the MacBook Pro 13\" (Both baseline models, priced at 1,200 $ retail)",
+        "output": "[{\"aspect\": \"priced\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Not too expense and has enough storage for most users and many ports.",
+        "output": "[{\"aspect\": \"storage\", \"sentiment\": \"positive\"}, {\"aspect\": \"ports\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The audio volume is quite low and virtually unusable in a room with any background activity.",
+        "output": "[{\"aspect\": \"audio volume\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is lightweight and the perfect size to carry to class.",
+        "output": "[{\"aspect\": \"size\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was given a demonstration of Windows 8.",
+        "output": "[{\"aspect\": \"Windows 8\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The MBP is beautiful has many wonderful capabilities.",
+        "output": "[{\"aspect\": \"capabilities\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I thought that it will be fine, if i do some settings.",
+        "output": "[{\"aspect\": \"settings\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Runs very smoothly.",
+        "output": "[{\"aspect\": \"Runs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Boot-up slowed significantly after all Windows updates were installed.",
+        "output": "[{\"aspect\": \"Boot-up\", \"sentiment\": \"negative\"}, {\"aspect\": \"Windows updates\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "More likely it will require replacing the logic board once they admit they have a problem and come up with a solution.",
+        "output": "[{\"aspect\": \"logic board\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It was important that it was powerful enough to do all of the tasks he needed on the internet, word processing, graphic design and gaming.",
+        "output": "[{\"aspect\": \"internet\", \"sentiment\": \"positive\"}, {\"aspect\": \"word processing\", \"sentiment\": \"positive\"}, {\"aspect\": \"graphic design\", \"sentiment\": \"positive\"}, {\"aspect\": \"gaming\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like the Mini Mac it was easy to setup and install, but I am learning as I go and could use a tutorial to learn how to use some of the features I was use to on the PC especially the right mouse click menu.",
+        "output": "[{\"aspect\": \"setup\", \"sentiment\": \"positive\"}, {\"aspect\": \"install\", \"sentiment\": \"positive\"}, {\"aspect\": \"tutorial\", \"sentiment\": \"neutral\"}, {\"aspect\": \"features\", \"sentiment\": \"neutral\"}, {\"aspect\": \"right mouse click menu\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Runs real quick.",
+        "output": "[{\"aspect\": \"Runs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Buy the separate RAM memory and you will have a rocket!",
+        "output": "[{\"aspect\": \"RAM memory\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Since the machine's slim profile is critical to me, that was a problem.",
+        "output": "[{\"aspect\": \"profile\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "WiFi capability, disk drive and multiple USB ports to connect scale and printers was all that was required.",
+        "output": "[{\"aspect\": \"disk drive\", \"sentiment\": \"positive\"}, {\"aspect\": \"USB ports\", \"sentiment\": \"positive\"}, {\"aspect\": \"WiFi capability\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The SD card reader is slightly recessed and upside down (the nail slot on the card cannot be accessed), if this was a self ejecting slot this would not be an issue, but its not.",
+        "output": "[{\"aspect\": \"SD card reader\", \"sentiment\": \"negative\"}, {\"aspect\": \"nail slot on the card\", \"sentiment\": \"negative\"}, {\"aspect\": \"slot\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Soft touch, anodized aluminum with laser cut precision and no flaws.",
+        "output": "[{\"aspect\": \"touch\", \"sentiment\": \"positive\"}, {\"aspect\": \"anodized aluminum\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Simple details, crafted aluminium and real glass make this laptop blow away the other plastic ridden, bulky sticker filled laptops.",
+        "output": "[{\"aspect\": \"aluminium\", \"sentiment\": \"positive\"}, {\"aspect\": \"glass\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "First of all yes this is a mac and it has that nice brushed aluminum .",
+        "output": "[{\"aspect\": \"aluminum\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "After all was said and done, I essentially used that $450 savings to buy 16GB of RAM, TWO Seagate Momentus XT hybrid drives and an OWC upgrade kit to install the second hard drive.",
+        "output": "[{\"aspect\": \"16GB of RAM\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Seagate Momentus XT hybrid drives\", \"sentiment\": \"neutral\"}, {\"aspect\": \"OWC upgrade kit\", \"sentiment\": \"neutral\"}, {\"aspect\": \"hard drive\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Dell Inspiron is fast and has a number pad on the keyboard, which I miss on my Apple laptops.",
+        "output": "[{\"aspect\": \"number pad on the keyboard\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was concerned that the downgrade to the regular hard drive would make it unacceptably slow but I need not have worried - this machine is the fastest I have ever owned...",
+        "output": "[{\"aspect\": \"regular hard drive\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This one still has the CD slot.",
+        "output": "[{\"aspect\": \"CD slot\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "No HDMI port.",
+        "output": "[{\"aspect\": \"HDMI port\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I had to install Mountain Lion and it took a good two hours.",
+        "output": "[{\"aspect\": \"install Mountain Lion\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Customization on mac is impossible.",
+        "output": "[{\"aspect\": \"Customization\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I am replacing the HD with a Micron SSD soon.",
+        "output": "[{\"aspect\": \"HD\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Micron SSD\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Plus two finger clicking as a replacement for the right click button is surprisingly intuitive.",
+        "output": "[{\"aspect\": \"two finger clicking\", \"sentiment\": \"positive\"}, {\"aspect\": \"right click button\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The SuperDrive is quiet.",
+        "output": "[{\"aspect\": \"SuperDrive\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The power plug has to be connected to the power adaptor to charge the battery but won't stay connected.",
+        "output": "[{\"aspect\": \"power plug\", \"sentiment\": \"negative\"}, {\"aspect\": \"power adaptor\", \"sentiment\": \"neutral\"}, {\"aspect\": \"battery\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The battery was completely dead, in fact it had grown about a quarter inch thick lump on the underside.",
+        "output": "[{\"aspect\": \"battery\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "if yo like practicality this is the laptop for you.",
+        "output": "[{\"aspect\": \"practicality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The OS is great.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I tried several monitors and several HDMI cables and this was the case each time.",
+        "output": "[{\"aspect\": \"monitors\", \"sentiment\": \"neutral\"}, {\"aspect\": \"HDMI cables\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "CONS: Price is a bit ridiculous, kinda heavy.",
+        "output": "[{\"aspect\": \"Price\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The troubleshooting said it was the AC adaptor so we ordered a new one.",
+        "output": "[{\"aspect\": \"AC adaptor\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Fan only comes on when you are playing a game.",
+        "output": "[{\"aspect\": \"Fan\", \"sentiment\": \"neutral\"}, {\"aspect\": \"playing a game\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Which it did not have, only 3 USB 2 ports.",
+        "output": "[{\"aspect\": \"USB 2 ports\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "No startup disk was not included but that may be my fault.",
+        "output": "[{\"aspect\": \"startup disk\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "There is no \"tools\" menu.",
+        "output": "[{\"aspect\": \"\\\"tools\\\" menu\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It is very fast and has everything that I need except for a word program.",
+        "output": "[{\"aspect\": \"word program\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Needs a CD/DVD drive and a bigger power switch.",
+        "output": "[{\"aspect\": \"CD/DVD drive\", \"sentiment\": \"neutral\"}, {\"aspect\": \"power switch\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "My laptop with Windows 7 crashed and I did not want Windows 8.",
+        "output": "[{\"aspect\": \"Windows 7\", \"sentiment\": \"negative\"}, {\"aspect\": \"Windows 8\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Easy to install also small to leave anywhere at your bedroom also very easy to configure for ADSl cable or wifi.",
+        "output": "[{\"aspect\": \"install\", \"sentiment\": \"positive\"}, {\"aspect\": \"configure for ADSl cable or wifi\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The speakers could have been better but it wasn't a deal breaker... this is a great little laptop... love it!",
+        "output": "[{\"aspect\": \"speakers\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Nice packing.",
+        "output": "[{\"aspect\": \"packing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I switched to this because I wanted something different, even though I miss windows.",
+        "output": "[{\"aspect\": \"windows\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Apple no longer includes iDVD with the computer and furthermore, Apple doesn't even offer it anymore!",
+        "output": "[{\"aspect\": \"iDVD\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I also wanted Windows 7, which this one has.",
+        "output": "[{\"aspect\": \"Windows 7\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "At first, I feel a little bit uncomfortable in using the Mac system.",
+        "output": "[{\"aspect\": \"Mac system\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I am used to computers with windows so I am having a little difficulty finding my way around.",
+        "output": "[{\"aspect\": \"windows\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It just works out of the box and you have a lot of cool software included with the OS.",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}, {\"aspect\": \"software\", \"sentiment\": \"positive\"}, {\"aspect\": \"OS\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "its as advertised on here..... it works great and is not a waste of money!",
+        "output": "[{\"aspect\": \"works\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Runs like a champ.....",
+        "output": "[{\"aspect\": \"Runs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Premium price for the OS more than anything else.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}, {\"aspect\": \"OS\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was a little concerned about the touch pad based on reviews, but I've found it fine to work with.",
+        "output": "[{\"aspect\": \"touch pad\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I bought this Mac book pro along with a new 27\" iMac and while they are still light years more reliable than a PC I have noticed a decline in the reliability of my Mac computers.",
+        "output": "[{\"aspect\": \"reliability\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The sound as mentioned earlier isn't the best, but it can be solved with headphones.",
+        "output": "[{\"aspect\": \"sound\", \"sentiment\": \"conflict\"}, {\"aspect\": \"headphones\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The track pad is a bit squirrely at times- sometimes too sensitive, and sometimes a bit unresponsive, but it's usable.",
+        "output": "[{\"aspect\": \"track pad\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "However, the experience was great since the OS does not become unstable and the application will simply shutdown and reopen.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"positive\"}, {\"aspect\": \"application\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "If you ask me, for this price it should be included.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The battery is not as shown in the product photos.",
+        "output": "[{\"aspect\": \"battery\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Even though I could have gotten a pc twice the speed for the same price I still think there's nothing like a Mac.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"conflict\"}, {\"aspect\": \"speed\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Shipping was quick and product described was the product sent and so much more...",
+        "output": "[{\"aspect\": \"Shipping\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "the retina display display make pictures i took years ago jaw dropping.",
+        "output": "[{\"aspect\": \"retina display display\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The Mac Mini is probably the simplest example of compact computing out there.",
+        "output": "[{\"aspect\": \"compact computing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Instead, I'll focus more on the actual performance and feature set of the hardware itself so you can make an educated decision on which Mac to buy.",
+        "output": "[{\"aspect\": \"performance and feature set of the hardware\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Other ports include FireWire 800, Gigabit Ethernet, MagSafe port, Microphone jack.",
+        "output": "[{\"aspect\": \"ports\", \"sentiment\": \"neutral\"}, {\"aspect\": \"FireWire 800\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Gigabit Ethernet\", \"sentiment\": \"neutral\"}, {\"aspect\": \"MagSafe port\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Microphone jack\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Additionally, there is barely a ventilation system in the computer, and even the simple activity of watching videos let alone playing steam games causes the laptop to get very very hot, and in fact impossible to keep on lap.",
+        "output": "[{\"aspect\": \"ventilation system\", \"sentiment\": \"negative\"}, {\"aspect\": \"watching videos\", \"sentiment\": \"neutral\"}, {\"aspect\": \"playing steam games\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Chatting with Acer support, I was advised the problem was corrupted operating system files.",
+        "output": "[{\"aspect\": \"Acer support\", \"sentiment\": \"neutral\"}, {\"aspect\": \"operating system files\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's been a couple weeks since the purchase and I'm struggle with finding the correct keys (but that was expected).",
+        "output": "[{\"aspect\": \"keys\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Many people complain about the new OS, and it's urgent for Apple to fix it asap!",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Now that I have upgraded to Lion I am much happier about MAC OS and have just bought an iMac for office.",
+        "output": "[{\"aspect\": \"Lion\", \"sentiment\": \"positive\"}, {\"aspect\": \"MAC OS\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "User upgradeable RAM and HDD.",
+        "output": "[{\"aspect\": \"RAM\", \"sentiment\": \"positive\"}, {\"aspect\": \"HDD\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "But I wanted the Pro for the CD/DVD player.",
+        "output": "[{\"aspect\": \"CD/DVD player\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The RAM memory is good but should have splurged for 8Mb instead of 4Mb.",
+        "output": "[{\"aspect\": \"RAM memory\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was a little worry at first because I don't have a lot of experience with os.x and windows has always been second nature to me after many years of using windows.",
+        "output": "[{\"aspect\": \"os.x\", \"sentiment\": \"neutral\"}, {\"aspect\": \"windows\", \"sentiment\": \"positive\"}, {\"aspect\": \"windows\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "With the softwares supporting the use of other OS makes it much better.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"neutral\"}, {\"aspect\": \"softwares\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I then upgraded to Mac OS X 10.8 \"Mountain Lion\".",
+        "output": "[{\"aspect\": \"Mac OS X 10.8 \\\"Mountain Lion\\\"\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was considering buying the Air, but in reality, this one has a more powerful performance and seems much more convenient, even though it's about .20 inch thicker and 2 lbs heavier.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "At home and the office it gets plugged into an external 24\" LCD screen, so built in screen size is not terribly important.",
+        "output": "[{\"aspect\": \"built in screen size\", \"sentiment\": \"neutral\"}, {\"aspect\": \"external 24\\\" LCD screen\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Just beware no DVD slot so when I went to install software I had on CD I couldn't.",
+        "output": "[{\"aspect\": \"install software\", \"sentiment\": \"negative\"}, {\"aspect\": \"DVD slot\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I bought it to be able to dedicate a small, portable laptop to my writing and was surprised to learn that I needed to buy a word processing program to do so.",
+        "output": "[{\"aspect\": \"word processing program\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This version of MacBook Pro runs on a third-generation CPU (\"Ivy Bridge\"), not the latest fourth-generation Haswell CPU the 2013 version has.",
+        "output": "[{\"aspect\": \"third-generation CPU (\\\"Ivy Bridge\\\")\", \"sentiment\": \"neutral\"}, {\"aspect\": \"fourth-generation Haswell CPU\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "No Cd Rom in the new version there's no way I'm spending that kind of money on something has less features than the older version.",
+        "output": "[{\"aspect\": \"Cd Rom\", \"sentiment\": \"neutral\"}, {\"aspect\": \"features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "the volume is really low to low for a laptopwas not expectin t volume to be so lowan i hate that about this computer",
+        "output": "[{\"aspect\": \"volume\", \"sentiment\": \"negative\"}, {\"aspect\": \"volume\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "and its not hard to accidentally bang it against something so i recommend getting a case to protect it.",
+        "output": "[{\"aspect\": \"case\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I got this at an amazing price from Amazon and it arrived just in time.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Every time I log into the system after a few hours, there is this endlessly frustrating process that I have to go through.",
+        "output": "[{\"aspect\": \"log into the system\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Put a SSD and use a 21\" LED screen, this set up is silky smooth!",
+        "output": "[{\"aspect\": \"21\\\" LED screen\", \"sentiment\": \"neutral\"}, {\"aspect\": \"SSD\", \"sentiment\": \"neutral\"}, {\"aspect\": \"set up\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The case is now slightly larger than the previous generation, but the lack of an external power supply justifies the small increase in size.",
+        "output": "[{\"aspect\": \"case\", \"sentiment\": \"negative\"}, {\"aspect\": \"size\", \"sentiment\": \"conflict\"}, {\"aspect\": \"external power supply\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",
+        "output": "[{\"aspect\": \"wireless mouse\", \"sentiment\": \"neutral\"}, {\"aspect\": \"pad\", \"sentiment\": \"negative\"}, {\"aspect\": \"works\", \"sentiment\": \"positive\"}, {\"aspect\": \"key board\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "When considering a Mac, look at the total cost of ownership and not just the initial price tag.",
+        "output": "[{\"aspect\": \"cost of ownership\", \"sentiment\": \"neutral\"}, {\"aspect\": \"price tag\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Has all the other features I wanted including a VGA port, HDMI, ethernet and 3 USB ports.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"positive\"}, {\"aspect\": \"VGA port\", \"sentiment\": \"neutral\"}, {\"aspect\": \"HDMI\", \"sentiment\": \"neutral\"}, {\"aspect\": \"ethernet\", \"sentiment\": \"neutral\"}, {\"aspect\": \"USB ports\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only thing I dislike about this laptop are the rubber pads found on the bottom of the computer for grip.",
+        "output": "[{\"aspect\": \"rubber pads\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It's a decent computer for the price and hopefully it will last a long time.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I was really happy because it is a much better price on amazon.com than it was in the Mac store.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"conflict\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The nicest  part is the low heat output and ultra quiet operation.",
+        "output": "[{\"aspect\": \"heat output\", \"sentiment\": \"positive\"}, {\"aspect\": \"operation\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I will upgrade the ram myself (because with this model you can you can do it) later on.",
+        "output": "[{\"aspect\": \"upgrade the ram\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The price is 200 dollars down.",
+        "output": "[{\"aspect\": \"price\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "this Mac Mini does not have a built-in mic, and it would seem that its Mac OS 10.9 does not handle external microphones properly.",
+        "output": "[{\"aspect\": \"built-in mic\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Mac OS 10.9\", \"sentiment\": \"negative\"}, {\"aspect\": \"external microphones\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "A lot of features and shortcuts on the MBP that I was never exposed to on a normal PC.",
+        "output": "[{\"aspect\": \"features\", \"sentiment\": \"neutral\"}, {\"aspect\": \"shortcuts\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Wasn't sure if I was going to like it much less love it so I went to a local best buy and played around with the IOS system on a Mac Pro and it was totally unique and different.",
+        "output": "[{\"aspect\": \"IOS system\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "air has higher resolution but the fonts are small.",
+        "output": "[{\"aspect\": \"resolution\", \"sentiment\": \"positive\"}, {\"aspect\": \"fonts\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "working with Mac is so much easier, so many cool features.",
+        "output": "[{\"aspect\": \"working\", \"sentiment\": \"positive\"}, {\"aspect\": \"features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like the brightness and adjustments.",
+        "output": "[{\"aspect\": \"brightness\", \"sentiment\": \"positive\"}, {\"aspect\": \"adjustments\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I only wish this mac had a CD/DVD player built in.",
+        "output": "[{\"aspect\": \"CD/DVD player\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only thing I miss is that my old Alienware laptop had backlit keys.",
+        "output": "[{\"aspect\": \"backlit keys\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The only thing I miss are the \"Home/End\" type keys and other things that I grew accustomed to after so long.",
+        "output": "[{\"aspect\": \"\\\"Home/End\\\" type keys\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "So happy with this purchase, I just wish it came with Microsoft Word.",
+        "output": "[{\"aspect\": \"Microsoft Word\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It has enough memory and speed to run my business with all the flexibility that comes with a laptop.",
+        "output": "[{\"aspect\": \"memory\", \"sentiment\": \"positive\"}, {\"aspect\": \"speed\", \"sentiment\": \"positive\"}, {\"aspect\": \"flexibility\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The speed, the simplicity, the design.. it is lightyears ahead of any PC I have ever owned.",
+        "output": "[{\"aspect\": \"speed\", \"sentiment\": \"positive\"}, {\"aspect\": \"simplicity\", \"sentiment\": \"positive\"}, {\"aspect\": \"design\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The battery life is excellent, the display is excellent, and downloading apps is a  breeze.",
+        "output": "[{\"aspect\": \"battery life\", \"sentiment\": \"positive\"}, {\"aspect\": \"display\", \"sentiment\": \"positive\"}, {\"aspect\": \"downloading apps\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The screen, the software and the smoothness of the operating system.",
+        "output": "[{\"aspect\": \"screen\", \"sentiment\": \"positive\"}, {\"aspect\": \"software\", \"sentiment\": \"positive\"}, {\"aspect\": \"operating system\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "i have dropped mine a couple times with only a slim plastic case covering it.",
+        "output": "[{\"aspect\": \"slim plastic case\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I also made a recovery USB stick.",
+        "output": "[{\"aspect\": \"recovery USB stick\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "But with this laptop, the bass is very weak and the sound comes out sounding tinny.",
+        "output": "[{\"aspect\": \"bass\", \"sentiment\": \"negative\"}, {\"aspect\": \"sound\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The built quality is really good, I was so Happy and excited about this Product.",
+        "output": "[{\"aspect\": \"built quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I am loving the fast performance also.",
+        "output": "[{\"aspect\": \"performance\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Further, this Mac Mini has a sloppy Bluetooth interface (courtesy of the Mac OS) and the range is poor.",
+        "output": "[{\"aspect\": \"Bluetooth interface\", \"sentiment\": \"negative\"}, {\"aspect\": \"Mac OS\", \"sentiment\": \"negative\"}, {\"aspect\": \"range\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "If you start on the far right side and scroll to your left the start menu will automatically come up.",
+        "output": "[{\"aspect\": \"start menu\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "My only gripe would be the need to add more RAM.",
+        "output": "[{\"aspect\": \"RAM\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Fine if you have a touch screen.",
+        "output": "[{\"aspect\": \"touch screen\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "As far as user type - I dabble in everything from games (WoW) to Photoshop, but nothing professionally.",
+        "output": "[{\"aspect\": \"games\", \"sentiment\": \"neutral\"}, {\"aspect\": \"Photoshop\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I re-seated the \"WLAN\" card inside and re-installed the LAN device drivers.",
+        "output": "[{\"aspect\": \"\\\"WLAN\\\" card\", \"sentiment\": \"neutral\"}, {\"aspect\": \"LAN device drivers\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This by far beats any computer out on the market today built well, battery life AMAZING.",
+        "output": "[{\"aspect\": \"built\", \"sentiment\": \"positive\"}, {\"aspect\": \"battery life\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The OS is easy, and offers all kinds of surprises.",
+        "output": "[{\"aspect\": \"OS\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I had to get Apple Customer Support to correct the problem.",
+        "output": "[{\"aspect\": \"Apple Customer Support\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "A veryimportant feature is Firewire 800 which in my experience works better then USB3 (in PC enabled with USB3)I was not originally sold on the MAC OS I felt it was inferior in many ways To Windows 7.",
+        "output": "[{\"aspect\": \"Firewire 800\", \"sentiment\": \"positive\"}, {\"aspect\": \"USB3\", \"sentiment\": \"negative\"}, {\"aspect\": \"USB3\", \"sentiment\": \"neutral\"}, {\"aspect\": \"MAC OS\", \"sentiment\": \"negative\"}, {\"aspect\": \"Windows 7\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I like iTunes, the apparent security, the Mini form factor, all the nice graphics stuff.",
+        "output": "[{\"aspect\": \"iTunes\", \"sentiment\": \"positive\"}, {\"aspect\": \"security\", \"sentiment\": \"positive\"}, {\"aspect\": \"Mini form factor\", \"sentiment\": \"positive\"}, {\"aspect\": \"graphics stuff\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "The first time I used the card reader it took half an hour and a pair of tweezers to remove the card.",
+        "output": "[{\"aspect\": \"card reader\", \"sentiment\": \"negative\"}, {\"aspect\": \"remove the card\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "After replacing the spinning hard disk with an ssd drive, my mac is just flying.",
+        "output": "[{\"aspect\": \"spinning hard disk\", \"sentiment\": \"neutral\"}, {\"aspect\": \"ssd drive\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I know some people complained about HDMI issues but they released a firmware patch to address that issue.",
+        "output": "[{\"aspect\": \"HDMI\", \"sentiment\": \"neutral\"}, {\"aspect\": \"firmware patch\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "With the needs of a professional photographer I generally need to keep up with the best specs.",
+        "output": "[{\"aspect\": \"specs\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "packing and everything was perfect",
+        "output": "[{\"aspect\": \"packing\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I called Toshiba where I gave them the serial number and they informed me that they were having issues with the mother boards.",
+        "output": "[{\"aspect\": \"mother boards\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I seem to be having repeat problems as the Mother Board in this one is diagnosed as faulty, related to the graphics card.",
+        "output": "[{\"aspect\": \"Mother Board\", \"sentiment\": \"negative\"}, {\"aspect\": \"graphics card\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "It also comes with 4G of RAM but if you're like me you want to max that out so I immediately put 8G of RAM in her and I've never used a computer that performs better.",
+        "output": "[{\"aspect\": \"4G of RAM\", \"sentiment\": \"neutral\"}, {\"aspect\": \"8G of RAM\", \"sentiment\": \"neutral\"}, {\"aspect\": \"performs\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This computer is also awesome for my sons virtual home schooling.",
+        "output": "[{\"aspect\": \"virtual home schooling\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Cost is more as compared to other brands.",
+        "output": "[{\"aspect\": \"Cost\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "also...- excellent operating system- size and weight for optimal mobility- excellent durability of the battery- the functions provided by the trackpad is unmatched by any other brand-",
+        "output": "[{\"aspect\": \"operating system\", \"sentiment\": \"positive\"}, {\"aspect\": \"size\", \"sentiment\": \"positive\"}, {\"aspect\": \"weight\", \"sentiment\": \"positive\"}, {\"aspect\": \"mobility\", \"sentiment\": \"positive\"}, {\"aspect\": \"durability of the battery\", \"sentiment\": \"positive\"}, {\"aspect\": \"functions provided by the trackpad\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "This hardware seems to be better than the iMac in that it isn't $1400 and smaller.",
+        "output": "[{\"aspect\": \"hardware\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "I've had it for about 2 months now and found no issues with software or updates.",
+        "output": "[{\"aspect\": \"software\", \"sentiment\": \"neutral\"}, {\"aspect\": \"updates\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "the latest version does not have a disc drive.",
+        "output": "[{\"aspect\": \"disc drive\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Extract aspects and classify sentiments. Aspects are words in the sentence and sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple aspects.",
+        "input": "Screen - although some people might complain about low res which I think is ridiculous.",
+        "output": "[{\"aspect\": \"Screen\", \"sentiment\": \"positive\"}, {\"aspect\": \"res\", \"sentiment\": \"positive\"}]"
+    }
+]

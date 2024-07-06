@@ -1,0 +1,1137 @@
+[
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Room Was Acceptable",
+        "output": "[{\"target\": \"Room\", \"category\": \"rooms#general\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The room was nice and the furnishings were comfortable.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"furnishings\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The food from the restaurant was very good but pricey which was the standard for everything in this hotel.",
+        "output": "[{\"target\": \"food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"food\", \"category\": \"food_drinks#prices\", \"sentiment\": \"negative\"}, {\"target\": \"hotel\", \"category\": \"hotel#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The internet access from the room was $9.95 for a 24 hour period.",
+        "output": "[{\"target\": \"internet access\", \"category\": \"rooms_amenities#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "To check in for my flight using the business center cost me $4.59 which included three minutes use of the internet and printing seven pages for my boarding pass.",
+        "output": "[{\"target\": \"business center\", \"category\": \"facilities#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Staff was very pleasant and helpful.",
+        "output": "[{\"target\": \"Staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Great stay!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "What a wonderful choice.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Check in was fast and courteous.",
+        "output": "[{\"target\": \"Check in\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Rooms were clean, spacious and comforatable.",
+        "output": "[{\"target\": \"Rooms\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"Rooms\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"Rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Food was outstanding, for both the conference and on my own.",
+        "output": "[{\"target\": \"Food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pool was refreshing on the hot days.",
+        "output": "[{\"target\": \"Pool\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Overall for the price of this hotel it cannot be beat!",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I will definitely stay here again conference or not.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Good Business Hotel",
+        "output": "[{\"target\": \"Hotel\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very nice hotel for business travelers - very few kids.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Great rooms with very comfortable beds.",
+        "output": "[{\"target\": \"rooms\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"beds\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Big pool area, very good fitness center - nice lobby and common areas.",
+        "output": "[{\"target\": \"pool area\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"fitness center\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}, {\"target\": \"lobby\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"common areas\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I had excellent shuttle service.",
+        "output": "[{\"target\": \"shuttle service\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The Sports Bar had good food with very reasonable prices.",
+        "output": "[{\"target\": \"food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"food\", \"category\": \"food_drinks#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The only downside was a per minute charge to use the business center computers.",
+        "output": "[{\"target\": \"business center computers\", \"category\": \"facilities#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Perfectly Close to the Airport",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I booked this because of it's proximity to the airport for our departure.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The staff was friendly and helpful, they upgraded our room to queen beds without us asking.",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The rooms are lovely, and the hotel is quiet even though it is so close to the airport.",
+        "output": "[{\"target\": \"rooms\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The 24 hour shuttle to the airport is very, very convenient and gets you there in about 4 minutes.",
+        "output": "[{\"target\": \"24 hour shuttle\", \"category\": \"facilities#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "We ate at the restaurant and the food was good hearty and the best avocado I've ever had.....so all in all you can't beat the deal, the location, the clean rooms, and the service.....",
+        "output": "[{\"target\": \"food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"avocado\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}, {\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "A Great Hotel",
+        "output": "[{\"target\": \"Hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Our stay at this hotel was wonderful.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The staff was very courteous upon check-in.",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Our room was perfectly spotless.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "(I had to use an outlet behind the headboard, and expected to see some type of dirt when I pulled the bed out, but to my surprise, not even dust!)",
+        "output": "[{\"target\": \"NULL\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very clean and well maintained.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"rooms#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Some nice touches of southwest decor here and there.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "No problems whatsoever, and I would recommend this hotel to anybody.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Good service but rude desk clerk",
+        "output": "[{\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"desk clerk\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "She immediately began to yell that if I wanted an upgrade I would have to pay for it.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The same desk clerk started to yell again stating that she had told me when I called that I could upgrade for a charge and that was her rules.",
+        "output": "[{\"target\": \"desk clerk\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "She completely ignored me and just kept on yelling.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I asked to speak to the manager and she told me she was the manager when in fact the manager's name was clearly displayed on the wall.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "This incident was very humiliating as other guests were present.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I am writing this review because this kind of behavior was totally unacceptable and hopefully no other guests will be treated in this manner.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Overall service was great and the staff as a whole were very courteous and helpful.",
+        "output": "[{\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Not bad for one night",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Front desk staff were friendly and helpful both with early check-in and an early check-out.",
+        "output": "[{\"target\": \"Front desk staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Room was large and spacious, but rather bland.",
+        "output": "[{\"target\": \"Room\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"Room\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}, {\"target\": \"Room\", \"category\": \"rooms#design_features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Excellent for a business traveler, or for a stayover with early departure to Phoenix Sky Harbor Airport, took 8 minutes to get to the airport via 10 freeway.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Ideal location.",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very affordable rate at low $50s.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The pool looked nice, as did their restaurant, but didn't try either one.",
+        "output": "[{\"target\": \"pool\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}, {\"target\": \"restaurant\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Well below average",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Unfortunately, this is below average.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Rooms are large but very plain, with furnishings and fixtures as cheap as possible.",
+        "output": "[{\"target\": \"Rooms\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"Rooms\", \"category\": \"rooms#design_features\", \"sentiment\": \"negative\"}, {\"target\": \"fixtures\", \"category\": \"rooms#quality\", \"sentiment\": \"negative\"}, {\"target\": \"furnishings\", \"category\": \"rooms#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The hotel shows its age and badly needs refurbishing.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Bathroom sink was on a slight slant because it was pulling out of the wall.",
+        "output": "[{\"target\": \"Bathroom sink\", \"category\": \"rooms#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Nothing is especially terrible or unacceptable about this hotel.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It is just subpar.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Don't do it!!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "This place is run down, dirty and loud.",
+        "output": "[{\"target\": \"place\", \"category\": \"hotel#quality\", \"sentiment\": \"negative\"}, {\"target\": \"place\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"negative\"}, {\"target\": \"place\", \"category\": \"hotel#comfort\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The pictures they provide on the web do not tell the story so don't be fooled.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Great Restaurant",
+        "output": "[{\"target\": \"Restaurant\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "This property has really improved since our last stay.",
+        "output": "[{\"target\": \"property\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Room was cool, clean and comfy.",
+        "output": "[{\"target\": \"Room\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"Room\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"Room\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The restaurant downstairs is the best kept secret in the area!",
+        "output": "[{\"target\": \"restaurant\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The food and service was outstanding (try the seafood platter).",
+        "output": "[{\"target\": \"food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"seafood platter\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Staff was courteous and efficient.",
+        "output": "[{\"target\": \"Staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I keep on coming back!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I've been going to this place every year and I keep on coming back to this hotel.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The breakfast is excellent!",
+        "output": "[{\"target\": \"breakfast\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It is rare that hotels in this class serve hot meals, yet they do!",
+        "output": "[{\"target\": \"meals\", \"category\": \"food_drinks#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Breakfast is fit for a king.",
+        "output": "[{\"target\": \"Breakfast\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Plus, the staff at the front desk are always courteous and friendly.",
+        "output": "[{\"target\": \"staff at the front desk\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Though the bathrooms are a bit old, the beds are still cozy.",
+        "output": "[{\"target\": \"bathrooms\", \"category\": \"rooms#quality\", \"sentiment\": \"negative\"}, {\"target\": \"beds\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "And the hotel is right in the middle of everywhere.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Above average hotel for great price !",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Got a great price of $64 per night.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The room was perfect for me, the bed was one of the most comfortable I've ever had in a hotel.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"bed\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very clean, great service - they gave me a complimentary bottle of wine because I missed the hotel shuttle.",
+        "output": "[{\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Good restaurant and bar attached.",
+        "output": "[{\"target\": \"restaurant\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}, {\"target\": \"bar\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Close to Scottsdale and the University.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Price was right",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pleasantly surprised at $69 night.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Front desk was not helpful, but who cares...for $69 you get a clean, fairly-large room, central air, refrig/micro, free (but sparse) breakfast buffet.",
+        "output": "[{\"target\": \"Front desk\", \"category\": \"service#general\", \"sentiment\": \"negative\"}, {\"target\": \"room\", \"category\": \"rooms#prices\", \"sentiment\": \"positive\"}, {\"target\": \"room\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"room\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"breakfast buffet\", \"category\": \"food_drinks#prices\", \"sentiment\": \"positive\"}, {\"target\": \"breakfast buffet\", \"category\": \"food_drinks#style_options\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Stayed there because it was near Banner Hospital.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Friendly Staff",
+        "output": "[{\"target\": \"Staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The staff was extremely helpful and friendly.",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I would say they are the best part of the hotel!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "An elevator was broken during our last stay and it was most annoying, but did not greatly impact the overall experience.",
+        "output": "[{\"target\": \"elevator\", \"category\": \"facilities#quality\", \"sentiment\": \"negative\"}, {\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "All in all it is a nice and affordable spot for sightseeing in the area.",
+        "output": "[{\"target\": \"spot\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"spot\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}, {\"target\": \"spot\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Administrative Issues",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The Best Western Executive Park Hotel is an average place to stay (though a bit far from downtown) with a substandard management team.",
+        "output": "[{\"target\": \"Best Western Executive Park Hotel\", \"category\": \"hotel#general\", \"sentiment\": \"neutral\"}, {\"target\": \"Best Western Executive Park Hotel\", \"category\": \"location#general\", \"sentiment\": \"negative\"}, {\"target\": \"management team\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I've tried to obtain a receipt for my stay to replace one I lost and have been ignored.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "There's never anyone to talk to from management and phone calls/e mails receive no response.",
+        "output": "[{\"target\": \"management\", \"category\": \"service#general\", \"sentiment\": \"negative\"}, {\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It's not a recipe for another stay.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Not impressed",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The desk person was in a rude mood.",
+        "output": "[{\"target\": \"desk person\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "There was construction being done on the street in front of the hotel; which made it very difficult driving around.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The air conditioner was very loud.",
+        "output": "[{\"target\": \"air conditioner\", \"category\": \"rooms_amenities#quality\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Nothing told us that there was a free breakfast - the restaurant looked like it was closed.",
+        "output": "[{\"target\": \"restaurant\", \"category\": \"facilities#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "All in all the price was way too high for such a poor accomodations.",
+        "output": "[{\"target\": \"accomodations\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}, {\"target\": \"accomodations\", \"category\": \"hotel#prices\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Extremely reasonable for the price paid.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Excellent service.",
+        "output": "[{\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I was there 3 nights for a conference and am giving it 5 stars, as it was quite reasonably priced for what we received.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The staff was friendly overall.",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Airport shuttle service was convenient as I chose not to rent a car during this trip.",
+        "output": "[{\"target\": \"Airport shuttle service\", \"category\": \"facilities#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "No complaints about the room, pretty clean.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"room\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I went to the lunch buffet twice and had a nice meal and again at very reasonable price.",
+        "output": "[{\"target\": \"lunch buffet\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"lunch buffet\", \"category\": \"food_drinks#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "There was a few restaurants within walking distance to eat at as well.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The conference/banquet room was great.",
+        "output": "[{\"target\": \"conference/banquet room\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very accomodating, good acoustics, clean.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"facilities#quality\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"facilities#cleanliness\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Not sure where the location was in reference to tourist spots, etc....but for a local conference, it was perfect.",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Nice hotel, nice location for the valley",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I really liked the hotel, it was very clean, the staff were fantastic and the rooms were great.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I cant complain about this hotel stay.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "the location is in the central valley so getting to anywhere is easy with the easy access to the local freeways.",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "the only drawback was that the pool area this time of year didnt seem to get much sun during the day, but the water is heated so it didnt matter too much.",
+        "output": "[{\"target\": \"pool area\", \"category\": \"facilities#design_features\", \"sentiment\": \"negative\"}, {\"target\": \"pool\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"pool\", \"category\": \"facilities#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I would absolutely stay here again!!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I was pleasantly surprised.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I expected it to be a dingy motel, but to my surprise, the rooms were clean and even a little spacious.",
+        "output": "[{\"target\": \"rooms\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The continental breakfast was excellent.",
+        "output": "[{\"target\": \"continental breakfast\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "If all you want is a clean place to stay without the frills, and especially if you're a business traveler, stay here.",
+        "output": "[{\"target\": \"place\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"place\", \"category\": \"hotel#design_features\", \"sentiment\": \"neutral\"}, {\"target\": \"place\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "They seem to have businesspeople in mind.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Loved this hotel overall",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "We loved this hotel.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It was close to the airport.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The hotel staff was very friendly, the rooms were very clean, both times.",
+        "output": "[{\"target\": \"hotel staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The rooms were quiet.",
+        "output": "[{\"target\": \"rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The pool was great and quiet both times, loved the lighted palm trees at night.",
+        "output": "[{\"target\": \"pool\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}, {\"target\": \"pool\", \"category\": \"facilities#comfort\", \"sentiment\": \"positive\"}, {\"target\": \"pool\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The breakfast buffet was unbelievable, everything you could imagine and a wonderful lady taking care of it.",
+        "output": "[{\"target\": \"breakfast buffet\", \"category\": \"food_drinks#style_options\", \"sentiment\": \"positive\"}, {\"target\": \"lady\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Awesome suite, 2 bathrooms, sinks and showers seperated by french doors.",
+        "output": "[{\"target\": \"suite\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}, {\"target\": \"suite\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Also 2 flat sceen tvs and lots of space in each room.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The only complaint I had is that our suite smelled like smoke and it was a non smoking suite.",
+        "output": "[{\"target\": \"suite\", \"category\": \"rooms#miscellaneous\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "We turned on both air conditioners to get rid of the smell and it wouldn't go away.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"rooms#miscellaneous\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I would highly recommend the hotel, great location, great service, good value.",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}, {\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Convienient Comfortable business travel Hotel",
+        "output": "[{\"target\": \"Hotel\", \"category\": \"hotel#comfort\", \"sentiment\": \"positive\"}, {\"target\": \"Hotel\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "This was my third stay in two months and I have noticed a continuing trend of upgrades and service.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Understand the property is under new management and it really shows.",
+        "output": "[{\"target\": \"property\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Recommend this highly for the seasoned Pheonix road warrior or warriorette.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Clean, decent hotel",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The hotel was clean, rooms were large and comfortable, nothing fancy.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "No noise, though hotel was half empty I'm extremely sensitive to noise at hotels and was not disturbed both evenings or in the mornings.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Is an older building but appeared to be well maintained.",
+        "output": "[{\"target\": \"building\", \"category\": \"hotel#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Interior corridors clean and well lit.",
+        "output": "[{\"target\": \"Interior corridors\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"Interior corridors\", \"category\": \"hotel#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Exterior grounds well kept.",
+        "output": "[{\"target\": \"Exterior grounds\", \"category\": \"hotel#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Has elevators on both sides of the building.",
+        "output": "[{\"target\": \"building\", \"category\": \"hotel#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Has a nice pool and very hot jaquizzi , was clean.",
+        "output": "[{\"target\": \"pool\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}, {\"target\": \"jaquizzi\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"hotel#cleanliness\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The pool was well heated so swimming was possible in the winter climate, even at night.",
+        "output": "[{\"target\": \"pool\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"pool\", \"category\": \"facilities#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Hotel provides free pass to Golds Gym, a five minute walk from front door.",
+        "output": "[{\"target\": \"Hotel\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Staff was freindly and professional for the most part.",
+        "output": "[{\"target\": \"Staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Has good airport shuttle, ten minutes unless heavy traffic, then at worst 20 minutes.",
+        "output": "[{\"target\": \"airport shuttle\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Its convienently located in southeast phoenix, right next to Tempe.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Nice neghborhood, safe.",
+        "output": "[{\"target\": \"neghborhood\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Would stay again.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Good conference facilities too, set up well.",
+        "output": "[{\"target\": \"conference facilities\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "\"best\" Best Western",
+        "output": "[{\"target\": \"Best Western\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "This hotel is the best Best Western I have stayed in.",
+        "output": "[{\"target\": \"Best Western\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Not especially attractive outside or surrounding area but convenient location and walk to small strip malls c eateries.",
+        "output": "[{\"target\": \"outside\", \"category\": \"hotel#design_features\", \"sentiment\": \"negative\"}, {\"target\": \"surrounding area\", \"category\": \"location#general\", \"sentiment\": \"negative\"}, {\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Inside hotel is cool and southwestern.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#design_features\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Hotel desk staff was friendly.",
+        "output": "[{\"target\": \"Hotel desk staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "There is a complimentary shuttle that goes anywhere in 5 mi area, including airport, and runs early am until about 10 pm.",
+        "output": "[{\"target\": \"shuttle\", \"category\": \"facilities#prices\", \"sentiment\": \"positive\"}, {\"target\": \"shuttle\", \"category\": \"facilities#miscellaneous\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Free high speed internet.",
+        "output": "[{\"target\": \"internet\", \"category\": \"facilities#quality\", \"sentiment\": \"positive\"}, {\"target\": \"internet\", \"category\": \"facilities#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very comfortable room.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pool area clean but not very attractive.",
+        "output": "[{\"target\": \"Pool area\", \"category\": \"facilities#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"Pool area\", \"category\": \"facilities#design_features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Two dificulties I had were: One, the restaurant service was terrible!",
+        "output": "[{\"target\": \"restaurant service\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It opens at 6 am which was great for the sightseeing tours and my breakfasts were all free, but once had to finally open the kitchen door and ask to be seated.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"facilities#miscellaneous\", \"sentiment\": \"positive\"}, {\"target\": \"breakfasts\", \"category\": \"food_drinks#prices\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Then wait to give order, then wait for the food.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The food selection was pretty good.",
+        "output": "[{\"target\": \"food selection\", \"category\": \"food_drinks#style_options\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "One time the employee stopped to pick up dirty plates as he led me to my seat!",
+        "output": "[{\"target\": \"employee\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The other problem was the hotel manager - a young woman apparently somewhat new at her job.",
+        "output": "[{\"target\": \"hotel manager\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "She tried to refuse my gold crown club points as payment for my stay.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "When I was persistent, she made a phone call and I heard her say well, i never heard of that.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I would definitely stay here again when in the Phoenix area!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Good motel, Poor location",
+        "output": "[{\"target\": \"motel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "My overall sense is that this was a good motel, comparatively inexpensive.",
+        "output": "[{\"target\": \"motel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"motel\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Comparatively inexpensive",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Microwave, refrigerator, coffee maker in room",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Decent (but repetitive) breakfast included in price (wafles, scrambled eggs, cereal, etc.)",
+        "output": "[{\"target\": \"breakfast\", \"category\": \"food_drinks#quality\", \"sentiment\": \"neutral\"}, {\"target\": \"breakfast\", \"category\": \"food_drinks#style_options\", \"sentiment\": \"negative\"}, {\"target\": \"breakfast\", \"category\": \"food_drinks#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Free internet access (including printing) from lobby",
+        "output": "[{\"target\": \"internet access\", \"category\": \"facilities#prices\", \"sentiment\": \"positive\"}, {\"target\": \"printing\", \"category\": \"facilities#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Nice staff",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Average room size.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#design_features\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "- Very limited space to hang clothes",
+        "output": "[{\"target\": \"space\", \"category\": \"rooms#design_features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "My biggest problem was the location.",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It was far away from all the sites I wanted to see.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"location#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Great airport location",
+        "output": "[{\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "It was very quiet considering being so close to the airport.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very clean and comfortable room, helpful and friendly staff.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"room\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}, {\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The food in the Bar and Grille was just ok.",
+        "output": "[{\"target\": \"food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "There is a charge for internet access in the room but it works great.",
+        "output": "[{\"target\": \"internet access\", \"category\": \"rooms_amenities#prices\", \"sentiment\": \"negative\"}, {\"target\": \"internet access\", \"category\": \"rooms_amenities#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "You can print boarding passes at a kiosk near the front desk but it can be busy first thing in the morning so you might want to do it the day before.",
+        "output": "[{\"target\": \"kiosk\", \"category\": \"facilities#miscellaneous\", \"sentiment\": \"neutral\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I left on the 7:00am shuttle and the ride to the airport was quick and hassle-free.",
+        "output": "[{\"target\": \"shuttle\", \"category\": \"facilities#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Excellent!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Wow! What a great hotel!",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Rooms were clean, easy accessible.",
+        "output": "[{\"target\": \"Rooms\", \"category\": \"rooms#cleanliness\", \"sentiment\": \"positive\"}, {\"target\": \"Rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Beds were so comfortable!",
+        "output": "[{\"target\": \"Beds\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Staff was friendly.",
+        "output": "[{\"target\": \"Staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pool was heated, had a great atmosphere with unlimited bottled water available while swimming/laying out.",
+        "output": "[{\"target\": \"Pool\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Offered food and drink service at the pool.",
+        "output": "[{\"target\": \"pool\", \"category\": \"facilities#design_features\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Room service was great!",
+        "output": "[{\"target\": \"Room service\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Prompt delivery and wonderful food.",
+        "output": "[{\"target\": \"food\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"delivery\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I had the southwestern ceasar - it was one of the best salads I've ever had!",
+        "output": "[{\"target\": \"southwestern ceasar\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I was very impressed and would come back to the HIlton Phoenix Airport again!",
+        "output": "[{\"target\": \"HIlton Phoenix Airport\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "DO NOT STAY HERE",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "All 4 lower rooms were 80 degrees and above.",
+        "output": "[{\"target\": \"rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "After the concert we had to change 4 of the rooms twice trying to find cooler floors.",
+        "output": "[{\"target\": \"rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "We finally gave up at 12:30 a.m. with a room that was 77 degrees - still too warm.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#comfort\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "And the room did not even have a shower curtain!",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#design_features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I understand they are going through renovations, but they need to either do it floor by floor and close that floor or close the entire hotel until finished.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#miscellaneous\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The only nice thing was the free shuttle to America West Arena.",
+        "output": "[{\"target\": \"shuttle\", \"category\": \"facilities#prices\", \"sentiment\": \"positive\"}, {\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Very disappointing",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Lots of services promised and not provided.",
+        "output": "[{\"target\": \"services\", \"category\": \"facilities#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The shuttle wasn't running, and the restaurant was closed down - both of those explained to me with because business is low right now around the holidays.",
+        "output": "[{\"target\": \"shuttle\", \"category\": \"facilities#general\", \"sentiment\": \"negative\"}, {\"target\": \"restaurant\", \"category\": \"facilities#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The business center has been taken apart - the front desk staff did not know if it was going to be back, since they had no idea it had been taken apart and were quite shocked to find out, when they tried to let me in to use it.",
+        "output": "[{\"target\": \"business center\", \"category\": \"facilities#general\", \"sentiment\": \"negative\"}, {\"target\": \"front desk staff\", \"category\": \"service#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Vending machines were out of everything except in the lobby.",
+        "output": "[{\"target\": \"Vending machines\", \"category\": \"facilities#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Staff was very friendly and a bit embarrassed about everything that wasn't available.",
+        "output": "[{\"target\": \"Staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The room itself was fine.",
+        "output": "[{\"target\": \"room\", \"category\": \"rooms#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pay extra and stay somewhere else",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "This has to be the worst hotel I have ever stayed in!",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Their was no HOT WATER!",
+        "output": "[{\"target\": \"NULL\", \"category\": \"rooms#comfort\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The beds are very hard.",
+        "output": "[{\"target\": \"beds\", \"category\": \"rooms#comfort\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The staff was friendly.",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "No wifi only in the hotel lobby.",
+        "output": "[{\"target\": \"NULL\", \"category\": \"rooms#design_features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "If you get a suite with a stove dont except dishes, pots and pans they do not provide them you have to buy your own.",
+        "output": "[{\"target\": \"suite\", \"category\": \"rooms#design_features\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Pay the 20 extra and stay somewhere's else",
+        "output": "[{\"target\": \"NULL\", \"category\": \"hotel#general\", \"sentiment\": \"negative\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "Great hotel, great location, great price",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}, {\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}, {\"target\": \"hotel\", \"category\": \"hotel#prices\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I had a great time at this hotel and did not experience any of what the bad reviews are about.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "The staff was very friendly and helpful, the rooms were large and comfortable, the free breakfast was great, and the location downtown was excellent.",
+        "output": "[{\"target\": \"staff\", \"category\": \"service#general\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#design_features\", \"sentiment\": \"positive\"}, {\"target\": \"rooms\", \"category\": \"rooms#comfort\", \"sentiment\": \"positive\"}, {\"target\": \"breakfast\", \"category\": \"food_drinks#prices\", \"sentiment\": \"positive\"}, {\"target\": \"breakfast\", \"category\": \"food_drinks#quality\", \"sentiment\": \"positive\"}, {\"target\": \"location\", \"category\": \"location#general\", \"sentiment\": \"positive\"}]"
+    },
+    {
+        "instruction": "Summarize categories, extract targets and classify sentiments. Categories are pairs of entities and attributes. Entities include hotel, rooms, room_amenities, facilities, service, location, and food_drinks. Attributes include general, prices, design_features, cleanliness, comfort, quality, style_options, and miscellaneous. Targets are words in the sentence that explicitly mention entities, or NULL when entities are implicit. Sentiments include positive, negative, conflict, and neutral. The sentence may has none, one, or multiple categories.",
+        "input": "I would highly recommend this hotel to anyone wanting to stay in downtown Phoenix.",
+        "output": "[{\"target\": \"hotel\", \"category\": \"hotel#general\", \"sentiment\": \"positive\"}]"
+    }
+]
